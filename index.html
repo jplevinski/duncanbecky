@@ -4,21 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Misadventures of Duncan and Becky | A LitRPG Comedy</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
+    <nav class="site-nav">
+        <a href="index.html" class="site-logo">Duncan <span>&amp;</span> Becky</a>
+        <div class="site-nav-links">
+            <a href="index.html">[ Home ]</a>
+            <a href="index.html#toc">[ Chapters ]</a>
+            <a href="prologue.html" class="nav-primary">[ Start Reading ]</a>
+        </div>
+    </nav>
+
     <header class="hero">
+        <h1 class="hero-logo">Misadventures of<br>Duncan <span class="accent">&amp;</span> Becky</h1>
+
         <img src="hero-duncan-becky.jpg" alt="Duncan and Becky in a LitRPG Field, with floating HUD stat panels and goblins in the background" class="hero-image">
 
-        <p class="tagline">Survive the game. Manage your BAC. Try not to die.</p>
+        <p class="tagline-banner">Blackout in a field. Wake up in the game. Survive. (If you can.)</p>
 
         <a href="prologue.html" class="cta-btn">Start Reading Now</a>
     </header>
 
     <div class="container">
         <div class="system-prompt">
-            SYSTEM NOTIFICATION: WELCOME TO MELLONWOOD.<br><br>
+            <span class="tag">System Notification</span><br>
+            WELCOME TO MELLONWOOD.<br><br>
             FAILURE TO MAINTAIN YOUR BLOOD-ALCOHOL CONTENT ABOVE 0.10 WILL RESULT IN THE IMMEDIATE DELETION OF YOUR CAT. PROCEED WITH CAUTION, DEGENERATES.
         </div>
 
@@ -26,6 +41,57 @@
             <h2>The Story</h2>
             <p>Duncan owns a Munchkin cat, lives in his mother's basement, and drinks too much Jägermeister. Becky is an influencer funding her existence through the generosity of men, and she drinks too much Malibu. After a legendary blackout, they both wake up in a sun-drenched, high-resolution field with a floating UI and a deeply hostile AI.</p>
             <p>Forced to team up as a Level 1 Wrecker and a Level 1 Shadow Caster, this is the story of two people who can't even manage their own lives, let alone a fantasy world. Between fending off perverted goblins, managing their crippling hangovers, and trying not to kill each other, they have one ultimate quest: keep Duncan's blood-alcohol level high enough to save his cat, Meowth Vader, from permanent deletion.</p>
+        </section>
+
+        <section class="party-section">
+            <h2>Meet the Party</h2>
+            <p class="section-sub">// character_select.exe — chained together whether they like it or not</p>
+
+            <div class="party-grid">
+                <div class="party-card">
+                    <img src="duncan-select.jpg" alt="Duncan, Level 5 Wrecker Warrior, holding a bottle of Five O'Clock vodka in a grassy field">
+                    <div class="party-caption">Duncan<span>Level 5 Wrecker Warrior</span></div>
+                </div>
+
+                <div class="chain-divider" aria-hidden="true">
+                    <svg viewBox="0 0 260 60" xmlns="http://www.w3.org/2000/svg">
+                        <g fill="none" stroke="#101d2e" stroke-width="10" stroke-linecap="round">
+                            <rect x="6" y="18" width="40" height="24" rx="12"/>
+                            <rect x="38" y="8" width="24" height="44" rx="12"/>
+                            <rect x="66" y="18" width="40" height="24" rx="12"/>
+                            <rect x="98" y="8" width="24" height="44" rx="12"/>
+                            <rect x="126" y="18" width="40" height="24" rx="12"/>
+                            <rect x="158" y="8" width="24" height="44" rx="12"/>
+                            <rect x="186" y="18" width="40" height="24" rx="12"/>
+                        </g>
+                        <g fill="none" stroke="#f0c33e" stroke-width="5" stroke-linecap="round">
+                            <rect x="6" y="18" width="40" height="24" rx="12"/>
+                            <rect x="38" y="8" width="24" height="44" rx="12"/>
+                            <rect x="66" y="18" width="40" height="24" rx="12"/>
+                            <rect x="98" y="8" width="24" height="44" rx="12"/>
+                            <rect x="126" y="18" width="40" height="24" rx="12"/>
+                            <rect x="158" y="8" width="24" height="44" rx="12"/>
+                            <rect x="186" y="18" width="40" height="24" rx="12"/>
+                        </g>
+                    </svg>
+                </div>
+
+                <div class="party-card">
+                    <img src="becky-select.jpg" alt="Becky, Level 5 Shadow Dancer Warrior, building a sandcastle next to a bottle of Malibu">
+                    <div class="party-caption">Becky<span>Level 5 Shadow Dancer Warrior</span></div>
+                </div>
+            </div>
+
+            <div class="character-sheets">
+                <figure>
+                    <img src="duncan-sheet.jpg" alt="Character reference sheet for Duncan showing facial expressions, color palette, and character bio and traits">
+                    <figcaption>Character Reference Sheet: Duncan</figcaption>
+                </figure>
+                <figure>
+                    <img src="becky-sheet.jpg" alt="Character reference sheet for Becky showing facial expressions, color palette, stats, and character bio and traits">
+                    <figcaption>Character Reference Sheet: Becky</figcaption>
+                </figure>
+            </div>
         </section>
 
         <section class="features">
@@ -46,17 +112,17 @@
         <section class="story" id="toc">
             <h2>Chapters</h2>
             <ul class="toc-list">
-                <li><a href="prologue.html">Prologue<span class="toc-sub">Two blackouts, one sun-drenched field</span></a></li>
-                <li><a href="chapter-01.html">Chapter 1: Introductions<span class="toc-sub">Character creation goes about as well as you'd expect</span></a></li>
-                <li><a href="chapter-02.html">Chapter 2: First Interactions<span class="toc-sub">First blood, first loot, first twerk</span></a></li>
-                <li><a href="chapter-03.html">Chapter 3: The Bed<span class="toc-sub">One cabin, one bed, zero chill</span></a></li>
-                <li><a href="chapter-04.html">Chapter 4: The Trek to Mellonwood<span class="toc-sub">A Murder Kitty, a bee sting, a Comic Sans banner</span></a></li>
-                <li><a href="chapter-05.html">Chapter 5: Vern<span class="toc-sub">The bartender, the quest, and the ticking clock</span></a></li>
-                <li><a href="chapter-06.html">Chapter 6: Earn Your Drink<span class="toc-sub">Professions, goblins, and a world that's getting realer</span></a></li>
-                <li><a href="chapter-07.html">Chapter 7: The Ragged Goblin<span class="toc-sub">A proposition, and a harder look at what they've done</span></a></li>
-                <li><a href="chapter-08.html">Chapter 8: Now Rest Friends<span class="toc-sub">Sleep, dreams, and a chain neither of them asked for</span></a></li>
-                <li><a href="chapter-09.html">Chapter 9: Life Berries<span class="toc-sub">Dark elves, old wounds, and an argument with the narrator</span></a></li>
-                <li><a href="chapter-10.html">Chapter 10: Keep Duncan Soberish<span class="toc-sub">Goblin distillers and a title nobody wanted</span></a></li>
+                <li><a href="prologue.html"><span class="toc-badge">P</span>Prologue<span class="toc-sub">Two blackouts, one sun-drenched field</span></a></li>
+                <li><a href="chapter-01.html"><span class="toc-badge">01</span>Chapter 1: Introductions<span class="toc-sub">Character creation goes about as well as you'd expect</span></a></li>
+                <li><a href="chapter-02.html"><span class="toc-badge">02</span>Chapter 2: First Interactions<span class="toc-sub">First blood, first loot, first twerk</span></a></li>
+                <li><a href="chapter-03.html"><span class="toc-badge">03</span>Chapter 3: The Bed<span class="toc-sub">One cabin, one bed, zero chill</span></a></li>
+                <li><a href="chapter-04.html"><span class="toc-badge">04</span>Chapter 4: The Trek to Mellonwood<span class="toc-sub">A Murder Kitty, a bee sting, a Comic Sans banner</span></a></li>
+                <li><a href="chapter-05.html"><span class="toc-badge">05</span>Chapter 5: Vern<span class="toc-sub">The bartender, the quest, and the ticking clock</span></a></li>
+                <li><a href="chapter-06.html"><span class="toc-badge">06</span>Chapter 6: Earn Your Drink<span class="toc-sub">Professions, goblins, and a world that's getting realer</span></a></li>
+                <li><a href="chapter-07.html"><span class="toc-badge">07</span>Chapter 7: The Ragged Goblin<span class="toc-sub">A proposition, and a harder look at what they've done</span></a></li>
+                <li><a href="chapter-08.html"><span class="toc-badge">08</span>Chapter 8: Now Rest Friends<span class="toc-sub">Sleep, dreams, and a chain neither of them asked for</span></a></li>
+                <li><a href="chapter-09.html"><span class="toc-badge">09</span>Chapter 9: Life Berries<span class="toc-sub">Dark elves, old wounds, and an argument with the narrator</span></a></li>
+                <li><a href="chapter-10.html"><span class="toc-badge">10</span>Chapter 10: Keep Duncan Soberish<span class="toc-sub">Goblin distillers and a title nobody wanted</span></a></li>
             </ul>
         </section>
     </div>
