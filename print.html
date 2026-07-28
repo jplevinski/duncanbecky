@@ -1,0 +1,1720 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Printable Edition | Misadventures of Duncan and Becky</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .print-toolbar {
+            max-width: 700px;
+            margin: 2.5rem auto 0;
+            padding: 1.75rem;
+            text-align: center;
+        }
+
+        .print-toolbar h1 {
+            color: var(--navy-900);
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .print-toolbar p {
+            font-family: var(--font-mono);
+            color: #5b5236;
+            margin: 0 0 1.5rem;
+            font-size: 0.9rem;
+        }
+
+        .print-title-page {
+            text-align: center;
+            padding: 3rem 1rem 2rem;
+        }
+
+        .print-title-page h1 {
+            font-size: clamp(2.2rem, 6vw, 3.5rem);
+            color: var(--navy-900);
+        }
+
+        .print-title-page .print-subtitle {
+            font-family: var(--font-mono);
+            color: var(--gold-dark);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin: 0.75rem 0 0.25rem;
+        }
+
+        .print-title-page .print-byline {
+            font-family: var(--font-mono);
+            color: #5b5236;
+            margin: 0;
+        }
+
+        #print-toc {
+            margin: 2rem auto 3rem;
+            max-width: 500px;
+        }
+
+        #print-toc h2 {
+            text-align: center;
+            color: var(--navy-900);
+            font-size: 1.6rem;
+            margin-bottom: 1rem;
+        }
+
+        #print-toc ol {
+            font-family: var(--font-mono);
+            font-size: 0.95rem;
+            padding-left: 1.5rem;
+            margin: 0;
+        }
+
+        #print-toc li { margin-bottom: 0.4rem; }
+
+        #print-toc a {
+            color: var(--navy-900);
+            text-decoration: none;
+            border-bottom: 1px dotted var(--gold-dark);
+        }
+
+        #print-toc a:hover { color: var(--teal-dark); }
+
+        .print-chapter-break {
+            border: none;
+            margin: 0;
+        }
+
+        @media print {
+            .site-nav, .print-toolbar, .cta-btn { display: none !important; }
+
+            body { background: #fff !important; }
+
+            .print-title-page { page-break-after: always; }
+
+            #print-toc { page-break-after: always; }
+
+            .story h2 { page-break-before: always; }
+
+            #print-toc + .story h2:first-of-type { page-break-before: avoid; }
+
+            .print-chapter-break { page-break-before: always; }
+
+            .ai-voice, .game-ui {
+                background: #fff !important;
+                color: #000 !important;
+                border: 1.5px solid #000 !important;
+            }
+
+            .stat-table caption {
+                background: #fff !important;
+                color: #000 !important;
+                border-bottom: 2px solid #000;
+            }
+
+            a { color: #000 !important; text-decoration: none !important; }
+
+            .story { max-width: 100%; }
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="site-nav">
+        <a href="index.html" class="site-logo">Duncan <span>&amp;</span> Becky</a>
+        <div class="site-nav-links">
+            <a href="index.html">[ Home ]</a>
+            <a href="index.html#toc">[ Chapters ]</a>
+            <a href="print.html">[ Print Edition ]</a>
+            <a href="prologue.html" class="nav-primary">[ Start Reading ]</a>
+        </div>
+    </nav>
+
+    <div class="print-toolbar">
+        <h1>Printable Edition</h1>
+        <p>// every chapter, one document &mdash; for printing or saving as a PDF</p>
+        <button class="cta-btn" onclick="window.print()" type="button">Print / Save as PDF</button>
+    </div>
+
+    <div class="container">
+        <div class="print-title-page">
+            <h1 class="hero-logo" style="font-size: clamp(2.2rem, 6vw, 3.5rem);">Misadventures of<br>Duncan <span class="accent">&amp;</span> Becky</h1>
+            <p class="print-subtitle">The Complete Story &mdash; Prologue through Chapter 11</p>
+            <p class="print-byline">by Lintin S. Vives</p>
+        </div>
+
+        <div id="print-toc">
+            <h2>Contents</h2>
+            <ol>
+                    <li><a href="#prologue">Prologue</a></li>
+                    <li><a href="#chapter-01">Chapter 1: Introductions</a></li>
+                    <li><a href="#chapter-02">Chapter 2: First Interactions</a></li>
+                    <li><a href="#chapter-03">Chapter 3: The Bed</a></li>
+                    <li><a href="#chapter-04">Chapter 4: The Trek to Mellonwood</a></li>
+                    <li><a href="#chapter-05">Chapter 5: Vern</a></li>
+                    <li><a href="#chapter-06">Chapter 6: Earn Your Drink</a></li>
+                    <li><a href="#chapter-07">Chapter 7: The Ragged Goblin</a></li>
+                    <li><a href="#chapter-08">Chapter 8: Now Rest Friends</a></li>
+                    <li><a href="#chapter-09">Chapter 9: Life Berries</a></li>
+                    <li><a href="#chapter-10">Chapter 10: Keep Duncan Soberish</a></li>
+                    <li><a href="#chapter-11">Chapter 11: Grand-Daddy's Kombucha</a></li>
+            </ol>
+        </div>
+
+        <section class="story">
+<h2 id="prologue">Prologue</h2>
+<p>This is a story about Duncan.</p>
+<p>Duncan owns a Munchkin cat named Meowth Vader. Duncan lives in his mother's basement, a subterranean kingdom of crusty manga stacks, unpainted mini-figurines, and the constant buzz of gaming PC fans. When Duncan drinks, he plucks his nose hairs with obsessive, watery-eyed precision. Duncan drinks a lot.</p>
+<p>Duncan is thirty years old.</p>
+<p>On Tuesday, Duncan's guild finally downed a legendary raid boss in World of Warcraft Classic. He celebrated the victory by murdering a fifth of Jägermeister and polishing off an entire case of hard seltzers. He eventually blacked out to the flickering glow of big-booty porn and the sweet, dizzying scent of his own success.</p>
+<p>He awoke in the middle of a sun-drenched field, staring at a floating user interface and a character selection screen.</p>
+
+<div class="scene-break">***</div>
+
+<p>This is a story about Becky.</p>
+<p>Becky has a boyfriend named Brad. Becky drives a blue Mustang and calls herself an influencer, which is a fancy way of saying she lives off the generosity of men who fund her "content." When Becky drinks, she plucks her eyebrows until they are thin, symmetrical lines of regret. Becky drinks a lot.</p>
+<p>Becky is twenty-four years old.</p>
+<p>On Tuesday, Becky walked in on Brad fingering her best friend, Emily. Becky did not celebrate. She fled into the woods behind the house and surrendered to a bottle of Absolut Vodka. She eventually blacked out in a pile of damp leaves, sobbing herself into a chemical stupor.</p>
+<p>She awoke in the middle of a sun-drenched field, staring at a floating user interface and a character selection screen.</p>
+<p>This is a story about Duncan and Becky. It is the story of how their worlds collided—and how two people who can't even manage their own blood-alcohol levels now have to rely on each other to survive.</p>
+
+<div class="print-chapter-break"></div>
+
+<h2 id="chapter-01">Chapter 1: Introductions</h2>
+<h3>Part 1: Duncan</h3>
+<p>"Motherfucking—bitch—cock—Jesus Christ."</p>
+<p>Duncan clutched his skull as if it were trying to escape him. Two facts surfaced through the nausea:</p>
+<p>One: the erection was gone.<br>Two: so was his dignity.</p>
+<p>He leaned forward and vomited.</p>
+<p>Swirling user interfaces and hangovers did not mix.</p>
+<p>He pinched himself hard. Nothing changed. No basement. No gaming chair. No piss bottles. Just open sky and grass that looked suspiciously high-resolution.</p>
+<p class="ai-voice">CHARACTER SELECTION COMMENCES, the AI blared.</p>
+<p>"Screw you," Duncan groaned. "Stop shouting. I have a headache."</p>
+<p class="ai-voice">CHARACTER SELECTION COMMENCES. PLEASE CHOOSE A RACE AND CLASS.</p>
+<p>"Argh—what the hell is this?" Duncan squinted around. The open field stretched on forever, empty except for floating menus and glowing panels. It looked exactly like the start of an MMORPG.</p>
+<p>"Oh, fuck me."</p>
+<p>He pressed his temples, dry heaved twice, then burped.</p>
+<p>"Well," he said, straightening up, "this is kinda cool."</p>
+<p>Duncan didn't question it. Questioning things was sober behavior.</p>
+<p>"What are my choices, hum de dum de dum…" He flicked through menus with the bored efficiency of a veteran gamer, scanning races and classes between waves of nausea. He knew all this. Stats. Synergies. Builds.</p>
+<p>"Wish I had a damned shot."</p>
+<p>Duncan looked around the field.</p>
+<p>Then he smiled.</p>
+<p>"Oh shit. Motherfuckers left me a treat."</p>
+<p>A pint of Jägermeister sat in the grass like an offering from a benevolent god. Duncan snatched it up and took a long pull. Warmth bloomed through his chest. The headache eased. The world made sense again.</p>
+<p>"Mmm… better."</p>
+<p>Duncan—now firmly in the zone—returned to character creation.</p>
+<p>"What the fuck, no gender options? I wanted to be a hot female Night Elf." He frowned. "I wanted to really experience womanhood. Not just… manage my manhood."</p>
+<p>"Choices. Choices. Choices." He skimmed the races. Human. Elf. Dwarf. Gnome. Orc. Troll. "Same shit."</p>
+<p class="ai-voice">SO YOU WOULD LIKE SOMETHING NEW. HOW ABOUT A MURDER-HOBO BOX? MAYBE A CLASSLESS PROTO-SPECIES? BORING SHIT ONLY HERE. NOW PICK.</p>
+<p>"Fuck," Duncan muttered.</p>
+<p>The avatars hovered nearby—perfect bodies, six-pack abs, thick legs, heroic jawlines. Every one of them was aggressively well-endowed.</p>
+<p>Duncan nodded thoughtfully.</p>
+<p>"Hey, AI. Which race has the biggest shlongs?"</p>
+<p>The avatars all rolled their eyes. At once. With commitment.</p>
+<p class="ai-voice">WOULDN'T YOU LIKE TO KNOW. PICK A DAMN RACE ALREADY.</p>
+<p>"I pick the race with the biggest penis."</p>
+<p class="ai-voice">WELL. AREN'T YOU ANATOMICALLY PRECISE. HUMAN IT IS.</p>
+<div class="game-ui">POOF.</div>
+<p>Nothing changed.</p>
+<p>Duncan stared down at himself.</p>
+<p>"…What the fuck? Nothing changed."</p>
+<p>He stomped the grass and crossed his arms, pouting like a prepubescent porky kid.</p>
+<p class="ai-voice">IT'S NOT THE SIZE OF THE MEMBER. IT'S THE WAY THE HIPS MOVE. WITHIN REASON.</p>
+<p>"You know," Duncan said bitterly, "if I'm getting a do-over, I'd like to be a little better equipped. Fucker. I haven't gotten laid in like… six years."</p>
+<p>He grabbed his junk, flipped off the sky, and moved on.</p>
+<p>"Alright. Class selection. No tricks this time, right?"</p>
+<p class="ai-voice">OH, SURE. NONE AT ALL.</p>
+<p>"Prick."</p>
+<p>Duncan scanned the list. "Warrior. Warlock. Paladin. Rogue. Hunter…" He scratched himself absently. "These are just WoW classes. Am I dreaming?"</p>
+<p class="ai-voice">YOU WISH. HURRY UP, NOOB.</p>
+<p>"Okay, okay. I'm gonna be like Boxxy. Warlock!"</p>
+<p class="ai-voice">WARRIOR IT IS.</p>
+<p>"No, I said Warlock." Duncan punctuated the word this time.</p>
+<p class="ai-voice">WARRIOR IT IS.</p>
+<p>"Son of a bitch."</p>
+<p>Duncan glanced around, instinctively searching for his mom. This game was cheating. First human. Now a warrior. Absolute bullshit.</p>
+<p>"Look at me," he snapped at the sky. "I'm fat. Out of shape. Horny without release. And drunk. You think warrior works?"</p>
+<p class="ai-voice">WARRIOR. IT. IS.</p>
+<div class="game-ui">POOF.</div>
+<table class="stat-table">
+<caption>Duncan — Level 1 Warrior — Starting Stats</caption>
+<tr><td>Strength</td><td>3</td></tr>
+<tr><td>Stamina</td><td>1</td></tr>
+<tr><td>Agility</td><td>1</td></tr>
+<tr><td>Intelligence</td><td>2</td></tr>
+<tr><td>Wisdom</td><td>1</td></tr>
+<tr><td>Spirit</td><td>2</td></tr>
+<tr><td>Charisma</td><td>0</td></tr>
+</table>
+<p>Duncan stared at the numbers.</p>
+<p>Then he laughed—a short, bitter bark that ended in a hiccup.</p>
+<p>"Of course."</p>
+<p>The pint of Jäger was still in his hand. He raised it toward the empty sky.</p>
+<p>"Nice one, fucker."</p>
+<p>And took a huge swig.</p>
+
+<h3>Part 2: Becky</h3>
+<p>"What an asshole."</p>
+<p>Becky wiped at her mascara-streaked eyes with the heel of her hand. "Fuck Brad. Fuck him. I can do better."</p>
+<p class="ai-voice">CHARACTER SELECTION COMMENCES.</p>
+<p>"What… is this?" Becky squinted.</p>
+<p>In the middle of the sun-drenched field sat a folding table straight out of a brunch-themed intervention. Mimosas. Bloody Marys. Celery stalks like judgmental green fingers.</p>
+<p>Becky waddled over and downed two drinks without stopping to breathe.</p>
+<p>"Whew. Okay. I needed that. I'm fine now."</p>
+<p>She glanced back at the floating menus. "Awww… look at the cute little people." Becky leaned closer, squinting at the gnomes. "What is this supposed to be?"</p>
+<p class="ai-voice">HAVEN'T YOU EVER PLAYED AN RPG IN YOUR LIFE?</p>
+<p>She frowned at the screen. "RPG? What's that?"</p>
+<p>"What is this?" Becky said, mostly to herself. "I must've taken shrooms. I didn't think I did, but honestly, who knows anymore."</p>
+<p>Her words came out slower than she intended.</p>
+<p class="ai-voice">DAMMIT, BECKY. GET A HOLD OF YOUR LIFE.</p>
+<p>"Oh—geez—you—you…" Becky blinked. "What was I saying?"</p>
+<p>She bent forward and puked.</p>
+<p>The vomit splashed against the translucent UI, droplets sliding down the holographic gold lettering of the Gnome race description.</p>
+<p class="ai-voice">DISGUSTING. ABSOLUTELY RECOIL-INDUCING.</p>
+<p>"It's… it's a de—de—detoxxx," Becky slurred, wiping her mouth with the back of a hand that still sported a hundred-dollar manicure. "Brad liked detoxes. Brad also liked Emily. Ugh."</p>
+<p class="ai-voice">LOOK, I CAN'T HAVE YOU DYING IN THE FIRST FIVE MINUTES. IT REFLECTS POORLY ON MY METRICS. SINCE YOU'RE CLEARLY COMMITTED TO THE 'HOT MESS' AESTHETIC, TAKE THIS AND SHUT UP.</p>
+<div class="game-ui">[PITY STAT GRANTED!]<br>+1 CHARISMA<br>Note: You look like a dumpster fire, but somehow people still want to roast marshmallows over you. Congratulations, Hotty.</div>
+<p>"Ooooh, a gift?" Becky giggled, swaying slightly. "Is it a filter? Because this lighting is not doing me favors. Where are the ring lights?"</p>
+<p>From somewhere across the field, a distant voice screamed, "What the fuck? That's not fair! She got a stat boost for just existing?"</p>
+<p>"Pretty privilege," Becky muttered. "Haters gonna—"</p>
+<p>She barfed again.</p>
+<p class="ai-voice">THERE ARE NO RING LIGHTS, BECKY. THERE IS ONLY THE COLD, HARD REALITY OF YOUR NEW BUILD. AND SINCE YOU CLEARLY CRAVE ATTENTION, WE'RE GOING TO LEAN INTO THAT.</p>
+<p>"Oh, sorry." Becky waved vaguely. "Just need a little coke. You got any?"</p>
+<p class="ai-voice">OMFG. FINE.</p>
+<div class="game-ui">POOF.</div>
+<p>A small table appeared. A neat line of coke waited patiently.</p>
+<p>Becky didn't hesitate.</p>
+<p class="ai-voice">BETTER, BECKY?</p>
+<p>"So much better," she sighed. "Thanks, babe."</p>
+<p>She scrolled through the races, making faces. "Eww. Uggh. Why are they all like that?"</p>
+<p>She stopped.</p>
+<p>"Huh. Human works."</p>
+<p class="ai-voice">CONGRATULATIONS. YOU PICKED HUMAN. NO NEED TO CHANGE, AM I RIGHT?</p>
+<p>"Hey, seriously?" Duncan's voice echoed again. "She gets to pick her race?"</p>
+<p>"Who's that?" Becky asked, side-eyeing the rotund nerd hovering in the background.</p>
+<p class="ai-voice">HE'S YOUR NEW BOYFRIEND.</p>
+<p>"Oh, hell no." Becky gagged as she looked at Duncan.</p>
+<p class="ai-voice">JESUS, GIRL. HOW MUCH DID YOU DRINK?</p>
+<p>"Not enough," she snapped. "I need more."</p>
+<p class="ai-voice">NOT UNTIL YOU PICK A CLASS.</p>
+<p>Becky crossed her arms and pouted. "Fine. What am I?"</p>
+<p class="ai-voice">OMG, BECKY. LOOK AT YOUR CLASS. YOU'RE A PRIEST.</p>
+<div class="game-ui">POOF!</div>
+<p>Becky, Level 1 Priest</p>
+<p class="ai-voice">HAPPY, DUNCAN? I PICKED HERS TOO.</p>
+<p>"Yes!" Duncan snorted. "Thank you, AI!"</p>
+<p>Becky's perfectly plucked eyebrows narrowed. "Are you serious? The last religious thing I did involved Brad, a crucifix, and some very poor decision-making. And now you want me to be a priest?"</p>
+<p class="ai-voice">JESUS, BECKY.</p>
+<p>END OF CHAPTER.</p>
+<table class="stat-table">
+<caption>Becky — Level 1 Priest — Starting Stats</caption>
+<tr><td>Strength</td><td>1</td></tr>
+<tr><td>Stamina</td><td>1</td></tr>
+<tr><td>Agility</td><td>3</td></tr>
+<tr><td>Intelligence</td><td>1</td></tr>
+<tr><td>Wisdom</td><td>1</td></tr>
+<tr><td>Spirit</td><td>2</td></tr>
+<tr><td>Charisma</td><td>5 (with bonus pity stat)</td></tr>
+</table>
+
+<div class="print-chapter-break"></div>
+
+<h2 id="chapter-02">Chapter 2: First Interactions</h2>
+<h3>Part 1: Duncan</h3>
+<p>"I want my Munchkin kitty!"</p>
+<p>Duncan spun in a slow, unsteady circle, scanning the endless field. No Meowth Vader. No angry chirp. No judgmental goblin face staring up at him.</p>
+<p>He sniffed.</p>
+<p>"Oh no."</p>
+<p>Duncan slowly accepted a terrible truth: he was not seeing his cat again anytime soon.</p>
+<p>A notification slammed into his vision.</p>
+<div class="game-ui">QUEST ACCEPTED: FIND THE TAVERN OWNER</div>
+<p>"What—hey, no, that's not Vader!"</p>
+<p>He squinted at the quest text. Read it again.</p>
+<p>A tavern.</p>
+<p>Duncan paused.</p>
+<p>"…Wait a minute."</p>
+<p>His face lit up. "A tavern? Aw, yeah. That's what I'm talking about."</p>
+<p>He skimmed the details. Village of Mellonwood. Locate the tavern owner, Vern.</p>
+<p>"I'm gonna get lit."</p>
+<p class="ai-voice">YOU ARE ALREADY LIT.</p>
+<p>"Why are you like this?" Duncan snapped. "And who even are you? Stop being a buzzkill."</p>
+<p>He spotted a pumpkin sitting innocently in the grass. It reminded him—tragically—of Meowth Vader. Duncan's lip trembled.</p>
+<p>"I miss you, buddy."</p>
+<p>He walked over, smashed the pumpkin with his foot, and sang a slurred song from 1979. Or maybe 1983. Possibly a commercial jingle. Time was a suggestion.</p>
+<p>Duncan wandered onward.</p>
+<p>The fields were pristine. Unrealistically so. Dandelions dotted the grass—some yellow, some white. He blew the white ones into the air and skipped forward with reckless joy. His chub bounced. His arms flailed. His smile stretched ear to ear.</p>
+<p>Duncan was very drunk.</p>
+<p>Which was unfortunate, because his life was about to change.</p>
+<div class="game-ui">ENEMY DETECTED: SIMP IMP — HE LOVES YOUR GIRL SO MUCH, HEHEHE ;)</div>
+<p>"Simp… Imp?" Duncan squinted. He planted his feet in what he hoped was a warrior stance. "Hey, AI, I don't have any weapons."</p>
+<p class="ai-voice">OH SHIT. SORRY. HERE YOU GO, BUDDY.</p>
+<p>A shield materialized in his left hand. A stainless-steel sword appeared in his right.</p>
+<div class="game-ui">ITEMS ACQUIRED:<br>Simple Shield<br>Stainless Steel Sword</div>
+<p>"Oh hell yeah," Duncan grinned. "Thanks, bro."</p>
+<p>The Simp Imp charged, shrieking obscenities as it ran.</p>
+<p>"Hey fucker! Your girl's so hot. I love her ass. I'd lick it raw all day long!"</p>
+<p>Duncan paused.</p>
+<p>He considered this.</p>
+<p>"I thought I was perverted," he muttered. "But damn. I'm basically a saint."</p>
+<p>He waddled forward, lifted his sword, and brought it down hard.</p>
+<p>The blade carved across the Imp's bird-nosed, nasty-ass face.</p>
+<p>Blood exploded everywhere. Way too much blood. Like a cursed fire hydrant.</p>
+<p>The Simp Imp collapsed.</p>
+<p>Dead.</p>
+<div class="game-ui">+50 XP<br>LEVEL UP!<br>Strength +1<br>Agility +1<br>Stamina +1</div>
+<p>Duncan stared at the notifications.</p>
+<p>Then he danced.</p>
+<p class="ai-voice">ARE YOU TWERKING, BRO?</p>
+<p>"Shut up," Duncan said. "I'm happy. I leveled up already!"</p>
+<p>He then actually started twerking. His booty moved with purpose.</p>
+<p class="ai-voice">SERIOUSLY, BRO?</p>
+<p>"Yeah," Duncan snapped. "I like moving my butt."</p>
+<p>He stopped dancing and looked down.</p>
+<p>The corpse was glowing.</p>
+<p>Sparkling.</p>
+<p>"Oooooh, shit." Duncan crouched. "I think I got loot."</p>
+<p>He raised both middle fingers to the sky. "Hey, asshole AI. How do I loot?"</p>
+<p class="ai-voice">FOCUS ON THE ITEM AND WILL IT INTO YOUR INVENTORY.</p>
+<p>Duncan stared at the corpse.</p>
+<p>He thought.</p>
+<p>He thought harder than he ever had in his life. Harder than the GED exam he failed. Harder than his parents' lectures, which he ignored. He strained every brain cell to its absolute limit.</p>
+<p class="ai-voice">YOU ARE AN IDIOT, AREN'T YOU?</p>
+<p>"Piss off!" Duncan shouted. "I am not an idiot."</p>
+<p>He puffed up his chest. "I am, in fact, a dungeon master."</p>
+<p class="ai-voice">OH REALLY?</p>
+<p>"Yeah! I have super creative ideas, fuckass."</p>
+<p class="ai-voice">OH REALLY?</p>
+<p>"My IQ is one-fifty!"</p>
+<p class="ai-voice">OH REALLY?</p>
+<p>"…Fuck you."</p>
+<p class="ai-voice">OK, GENIUS. WHAT'S OUR NEXT MOVE?</p>
+<p>"We get to Vern," Duncan said confidently. "And we get fucked up."</p>
+<p class="ai-voice">I MUST SAY. BRILLIANT MOVE.</p>
+<p>"I know," Duncan replied. "He's got the alcohol I need. Let's fucking go."</p>
+<p>Stats updates: Duncan, Level 2 Warrior</p>
+<table class="stat-table">
+<caption>Duncan — Level 2 Warrior</caption>
+<tr><td colspan="2">Skills and Abilities: Slash - a slicing attack that deals damage based on agility and strength, requires a sharp weapon. Block - resists damage using a shield based on stamina and strength, requires a shield.</td></tr>
+<tr><td>Strength</td><td>4</td></tr>
+<tr><td>Stamina</td><td>2</td></tr>
+<tr><td>Agility</td><td>2</td></tr>
+<tr><td>Intelligence</td><td>2</td></tr>
+<tr><td>Wisdom</td><td>1</td></tr>
+<tr><td>Spirit</td><td>2</td></tr>
+<tr><td>Charisma</td><td>0</td></tr>
+</table>
+
+<h3>Part 2: Becky</h3>
+<p>"I need another bump. Now."</p>
+<p class="ai-voice">THIS IS THE LAST ONE.</p>
+<p>"Whatever."</p>
+<p>Becky snorted the line and threw her head back. "Wooo!"—the kind of sound people made in bad comedy movies right before ruining their lives.</p>
+<p>She checked herself instinctively.</p>
+<p>Black leggings. White sweater. Booty absolutely doing its job. Hair curled just right. White shoes still pristine, somehow. Becky reached into her sweater pocket.</p>
+<p>"…Where's my phone?"</p>
+<p>Her stomach dropped.</p>
+<div class="game-ui">QUEST ACCEPTED: FIND THE TAVERN OWNER</div>
+<p>"Seriously," she snapped. "What happened to my phone?"</p>
+<p class="ai-voice">YOU LOST IT IN THE WOODS LAST NIGHT. REMEMBER?</p>
+<p>Becky groaned and dropped her arms.</p>
+<p class="ai-voice">OH WAIT- NO YOU DON'T. YOU WERE ABSOLUTELY SMASHED.</p>
+<p>"Cool. Great. Fantastic." Becky rubbed her temples. "So no phone. Now what?"</p>
+<p class="ai-voice">YOU HEAL THAT WARRIOR OVER THERE.</p>
+<p>"The ugly one?" Becky glanced sideways.</p>
+<p>As if on cue, three Simp Imps popped into existence around Duncan. One latched onto his shin and started chewing. Another climbed him like a greasy jungle gym and bit into his face.</p>
+<p>Blood sprayed.</p>
+<p>Duncan screamed.</p>
+<p class="ai-voice">HE NEEDS YOU. HE'LL DIE WITHOUT YOUR HELP.</p>
+<p>"Not my problem." Becky shrugged.</p>
+<p>She looked around.</p>
+<p>Field. Sky. Duncan. Monsters.</p>
+<p>That was it.</p>
+<p>Her expression shifted.</p>
+<p>"…Oh."</p>
+<p>The realization hit hard. Duncan had the weapon. When the monsters finished eating him, they'd probably move on to her.</p>
+<p>Becky swallowed.</p>
+<p>She liked it when Brad ate her. Brad knew what a tongue was for. Soft hair. Pretty eyes.</p>
+<p>"Fuck Brad."</p>
+<p>A staff appeared in her hand.</p>
+<p class="ai-voice">JUST POINT IT AT HIM AND SAY 'HEAL.' AND DON'T GET CUTE. YOU HAVE LIMITED MANA.</p>
+<p>Becky rolled her eyes. "Ugh. Fine."</p>
+<p>She lifted the staff, aimed vaguely at Duncan, and shouted, "Heal!"</p>
+<p>Light burst from the staff. Duncan's wounds closed in a flash of gold.</p>
+<p>He didn't waste the moment.</p>
+<p>Duncan roared and went to work—smashing and slashing the Simp Imps until they burst apart into wet, twitching chunks of monster meat.</p>
+<p>Silence returned to the field.</p>
+<p>Notifications bloomed.</p>
+<div class="game-ui">+50 XP<br>LEVEL UP! +1 Intelligence, +1 Spirit<br>NEW SPELL UNLOCKED: SMITE</div>
+<p>Becky blinked.</p>
+<p>"…Wait."</p>
+<p>She smiled slowly as she read the spell's description. Cost: 20MP, deals holy damage to an enemy based on your intelligence and spirit.</p>
+<p>"Oh."</p>
+<p>That changed things.</p>
+<p>END OF CHAPTER.</p>
+<table class="stat-table">
+<caption>Becky — Level 2 Priest</caption>
+<tr><td colspan="2">Spells and Abilities: Heal - restores HP for a target (or damages an undead target) based on intelligence and charisma. Smite - deals holy magic damage to a target based on wisdom and spirit.</td></tr>
+<tr><td>Strength</td><td>1</td></tr>
+<tr><td>Stamina</td><td>1</td></tr>
+<tr><td>Agility</td><td>3</td></tr>
+<tr><td>Intelligence</td><td>2</td></tr>
+<tr><td>Wisdom</td><td>2</td></tr>
+<tr><td>Spirit</td><td>2</td></tr>
+<tr><td>Charisma</td><td>5 (with bonus pity stat)</td></tr>
+</table>
+
+<h4>Interlude: The Architect</h4>
+<p>He threw back another shot. The burn was familiar—comforting.</p>
+<p>On the monitor, Duncan twerked over a sparkling corpse, laughing like nothing hurt yet.</p>
+<p>"Too easy," he muttered, "needs recalibration".</p>
+<p>With a flick of his finger, he nudged some sliders up, absurdity, intensity. Another swallow. The numbers wavered, then settled. He hesitated—just long enough to feel it—before flipping the Trauma Excavation switch on and adjusting it up as well.</p>
+
+<div class="print-chapter-break"></div>
+
+<h2 id="chapter-03">Chapter 3: The Bed</h2>
+<h3>Part 1</h3>
+<p>"My God, you're ugly."</p>
+<p>Becky looked Duncan up and down, her sneer lingering on the way his stomach peeked out from beneath his stretched T-shirt.</p>
+<p class="ai-voice">HEY, BECKY. BE NICE.</p>
+<p>She circled him slowly, assessing. "No ass. Like… at all." She frowned. "What do you even do?"</p>
+<p>Duncan didn't respond.</p>
+<p>He was too busy staring at Becky's D-cups bouncing beneath her sweater.</p>
+<p>"Huh?"</p>
+<p>Becky stopped. "Did you hear a single thing I just said?"</p>
+<p>She was used to this. Men stared at her body for a living. It paid her rent.</p>
+<p>"Uh—no," Duncan said honestly. "I'm Duncan." He slicked back his greasy hair and thrust out a hand.</p>
+<p>The hand glistened with nervous sweat.</p>
+<p>Becky looked at it.</p>
+<p>Then she smacked it away with her staff.</p>
+<p>"Ew. Gross. No. Keep your paws off me."</p>
+<div class="game-ui">BECKY HAS JOINED THE PARTY.</div>
+<p>"What was that?" Becky blinked. "Party? This doesn't look like a party."</p>
+<p>Duncan, meanwhile, was staring at the new UI elements hovering over her head—basics like Becky's HP, MP, and any status effects appeared beside his own.</p>
+<p>"Oh. Okay." He nodded to himself. "So. We're in an RPG."</p>
+<p>Becky squinted. "A what?"</p>
+<p>"Role-playing game," Duncan said, immediately slipping into full boring-nerd mode. "Like World of Warcraft or Dungeons & Dragons. Basically, we have stats, classes, quests, and—"</p>
+<p>To her, Duncan sounded like a broken dishwasher—a rhythmic, grinding noise that had nothing to do with her life. She watched his mouth move as it started to hypnotize her to sleep. Her eyes glazed over completely.</p>
+<p>Her head tilted slightly. One eyelid drooped.</p>
+<p>"I need another bump," she muttered. "I'm getting sleepy."</p>
+<p class="ai-voice">NO, BECKY. NO MORE DRUGS. YOU TWO NEED TO REST.</p>
+<p>A cabin blinked into existence beside them.</p>
+<p>Duncan brightened. "Ladies first." He gestured toward the door.</p>
+<p>Inside, the cabin was painfully simple. Wooden floor. One dresser. One queen-sized bed.</p>
+<p>Becky didn't hesitate.</p>
+<p>She climbed in, sprawled diagonally across the mattress, and yanked the blankets up to her chin.</p>
+<p>Duncan froze.</p>
+<p>"Hey! Leave some room for me!"</p>
+<p>Becky rolled onto her side. "You sleep on the floor."</p>
+<div class="game-ui">ACHIEVEMENT: ALPHA MENALITY. You don't need no man. (And he don't need no bed space, apparently.)</div>
+<p>Duncan frowned. He pouted. He threw a mini temper tantrum. "Can we get another bed in here AI?"</p>
+<p class="ai-voice">NO.</p>
+<p>"I can't sleep on the floor. She's already got the bed." Duncan stammered.</p>
+<p class="ai-voice">NO.</p>
+<p>"Becky, scootch over." Becky was already sleeping by this time. A bit of drool flowing out of the corner of her mouth.</p>
+<p>"For fuck's sake."</p>
+<p>He curled up at the foot of the bed like a chastised dog, tugging a sad corner of the blanket over himself.</p>
+<p>Duncan stared at the ceiling.</p>
+<p>The party had begun.</p>
+
+<h3>Part 2</h3>
+<p>"Are you fucking kidding me?"</p>
+<p>Duncan muttered under his breath as Becky's snoring sawed through the cabin like a chainsaw with asthma. His hangover was crashing hard now, the Jäger warmth long gone, leaving only a throbbing headache and a floor that felt like cold concrete wrapped in splinters.</p>
+<p>"AI, seriously, bro. Can I get something to sleep on? Anything? A mat? A pile of hay? I'm begging."</p>
+<p class="ai-voice">NO. STOP ASKING. SLEEP IN THE BED.</p>
+<p>The reply was curt, almost bored.</p>
+<p>Duncan threw off the pathetic corner of blanket he'd managed to steal and stood up.</p>
+<p>He looked down at Becky.</p>
+<p>Her hair was a rat's nest, mascara had raccooned around her eyes, and the pillow—Jesus Christ, the pillow—was soaked in drool. A lake of it.</p>
+<p>Then he heard it.</p>
+<p>Pffft.</p>
+<p>The smell hit half a second later: sulfur, skunk, and something that had clearly died inside her earlier.</p>
+<p>"Jesus Christ, Becky."</p>
+<p>"Wha…?" She rolled over, half-asleep.</p>
+<p>"You just crop-dusted the entire cabin," Duncan said, pinching his nose shut. "And you snore like a goddamn freight train."</p>
+<p>"Oh." Becky yanked the blanket over her face and resumed snoring.</p>
+<p>Duncan's patience snapped like a cheap guitar string.</p>
+<p>He ripped the blanket off her in one yank.</p>
+<p>Becky's eyes flew open. She sat up, clutching at the empty air.</p>
+<p>"Hey! I'm cold! Gimme that back!"</p>
+<p>"Did you hear a single word I said?" Duncan snapped, sounding exactly like a raid leader scolding a DPS who stood in fire.</p>
+<p>"Yes," Becky shot back, suddenly defensive. "Guys pay me good money to record me doing exactly that stuff. What's your problem?"</p>
+<p>"I'm not one of your simps, Becky. I'm Duncan. I don't give a flying fuck how hot you think you are, or actually are. I'm sleeping in this bed."</p>
+<p>"Eww. No." She immediately sprawled out starfish-style, claiming every inch her 110-pound frame could possibly reach.</p>
+<p>Duncan had hit his limit.</p>
+<p>He didn't ask again.</p>
+<p>He just dropped straight down onto the mattress beside her—hard enough that the bedframe creaked in protest. Her left arm ended up pinned beneath his bulk.</p>
+<p>Becky shrieked like she'd been set on fire.</p>
+<div class="game-ui">ACHIEVEMENT UNLOCKED: ALPHA MENALITY. That's it, take what your entire 280lb frame is entitled to. Fuck that bitch. Or not—clearly not.</div>
+<p>"Get it OFF me! Eww, eww, eww!"</p>
+<p>"Fuck you, Becky." Duncan yanked the blanket over himself, rolled toward the edge, and finally let her arm free.</p>
+<p>"I swear to God," she hissed, "if you touch me—"</p>
+<p>"Not interested, fart machine."</p>
+<p>Becky glared at the back of his head for three full seconds, then snatched her half of the blanket with a huff.</p>
+<p>They lay there in angry silence, two strangers sharing a mattress and a mutual loathing.</p>
+<p>Eventually, exhaustion won.</p>
+<p>They both passed out—shoulders almost touching, blankets drawn like battle lines down the middle of the bed.</p>
+
+<h3>Part 3</h3>
+<p class="ai-voice">RISE AND SHINE.</p>
+<p>The AI didn't bother easing them into consciousness. The roof of the cabin simply vanished, peeling away and dumping raw sunlight straight onto Duncan and Becky.</p>
+<p>"Oh—holy fuck—no."</p>
+<p>Duncan's eyes cracked open. His skull throbbed like it was being used as a drum in a bad metal band. The sunlight felt less like light and more like an act of violence.</p>
+<p>Becky, meanwhile, remained unconscious.</p>
+<p>She was deep in the post-bender abyss—crashing hard after stimulants, booze, and spite.</p>
+<p>That's when a bird flew overhead.</p>
+<p>It hovered for half a second.</p>
+<p>Then, without ceremony or mercy, it unloaded.</p>
+<p>The payload landed directly in Becky's hair and bit splattering on her shirt.</p>
+<p>Duncan, feeling like death reheated in a bargain-bin air fryer, laughed anyway. A weak, wheezing laugh—but sincere.</p>
+<p>Becky stirred.</p>
+<p>She felt it before she understood it. Warm. Wet. Sticky.</p>
+<p>Her eyes snapped open.</p>
+<p>"What the fuck, pervert!" She screamed and immediately kicked Duncan in the ribs. "Did you just splooge in my hair? My hair? Of all places?"</p>
+<p>"Dude—no!" Duncan gasped, curling away. "It was a bird!"</p>
+<p>Becky froze.</p>
+<p>"…A bird? A fucking bird?" She reached up, felt the mess, brought her fingers in front of her face. White, warm, viscous. "What kind of bird does drive-by splooging?"</p>
+<p>"Dude, I swear to God, I'm not—"</p>
+<p>Then Becky—without thinking—brought her finger to her mouth and tasted it.</p>
+<p>She immediately gagged and spat violently.</p>
+<p>Duncan's eyes went wide. Half-grinning at her sheer idiocy, half-nauseous from watching her eat bird shit.</p>
+<p>"Ok, fine," Becky conceded, wiping her tongue on the blanket. "Tastes bitter, not salty."</p>
+<div class="game-ui">ACHIEVEMENT UNLOCKED: WTF? - Seriously Becky, that's how you determine if it was actually bird shit? It was thick, whitish-yellow… oh, nm, I get it now.</div>
+<p class="ai-voice">ANWAY, YOU TWO LOVE BIRDS READY TO START YOUR QUEST?</p>
+<p>"Not gonna lie, AI," Duncan groaned, muscles cramping from withdrawal, hands starting to shake. "I don't think I can move."</p>
+<div class="game-ui">POOF.</div>
+<p>A half-pint of Five O'Clock vodka appeared beside him.</p>
+<p>"Seriously? This shit." Duncan griped, popping the cap and taking a swig. The burn was pure rubbing alcohol—harsh, chemical, like licking a battery—but it steadied the shakes. "Can I get a chaser?"</p>
+<div class="game-ui">POOF.</div>
+<p>A can of V8 juice materialized next to it.</p>
+<p>"Thanks, bro!" Duncan cracked it open, took a careful sip—just enough to mask the vodka's bite.</p>
+<p>"Hey, what about me?" Becky whined and pouted, looking adorable, or at least trying to.</p>
+<div class="game-ui">POOF.</div>
+<p>A fifth of Malibu coconut rum appeared beside her, pristine and beautiful, inviting.</p>
+<p>Becky cracked it open without hesitation, took a long, defiant swig, and sighed like she'd just been handed salvation.</p>
+<p>"What the fuck, AI?" Duncan sputtered, still clutching his shitty vodka. "You give her Malibu? Seriously?"</p>
+<p class="ai-voice">AT LEAST YOU GOT V8.</p>
+<p>Becky lowered the bottle, lips shiny with rum. "Shut it, bonehead. Where's my coke?"</p>
+<p class="ai-voice">I TOLD YOU. NO MORE DRUGS. BOTH OF YOU, YOU GET WHAT YOU GET AND DON'T THROW A FIT.</p>
+<p>"Lame."</p>
+<p>She flopped back onto the pillow—and took another pull.</p>
+<p class="ai-voice">NOW ON WITH IT.</p>
+<p>The quest notification appeared again. It hovered in the air telling them to find Vern.</p>
+<p>Then, without notice, the cabin and bed blinked out of existence, leaving the two with their asses on the grass.</p>
+<p>END OF CHAPTER.</p>
+
+<div class="print-chapter-break"></div>
+
+<h2 id="chapter-04">Chapter 4: The Trek to Mellonwood</h2>
+<h3>Part 1</h3>
+<p>There they were, sitting in a field, bathed in sunshine and shame—at least shame would've been present if they hadn't already consumed enough ethanol to fuel a city bus.</p>
+<p>"I can't believe that asshole," Becky sniffed. "No coke." She looked at Duncan, clearly expecting moral support.</p>
+<p>"The fuck you lookin' at me for?" Duncan said, chasing his vodka with V8. "Miss 'I'm the AI's favorite.'"</p>
+<p>Becky's lip trembled. "I've got bird shit in my hair. I don't have my phone."</p>
+<p>And then she started crying again. Tears streamed down her hair and fell onto her shirt. Then came the mumbling, whining, crying, and depressive brokenness only almost lethal amounts of alcohol can cause.</p>
+<p>Duncan looked at her. Looked at the ground. He stood, brushed himself off, and held out a hand.</p>
+<p>Becky hesitated—then took it. Duncan pulled her up and opened his arms, awkward but sincere.</p>
+<p>"Ew. Hell no." Becky hiccuped, grimacing. "You're still a disgusting slob. There is not enough Malibu in the world—"</p>
+<p class="ai-voice">OK LOVE BIRDS. YOU'VE GOT A QUEST. NO ADDITIONAL BOOZE UNTIL YOU GET TO TOWN.</p>
+<p>They exchanged the same oh shit look at the exact same time.</p>
+<p>Duncan was almost done with his vodka. Becky still had plenty of Malibu left—but she knew the math. Once Duncan finished his bottle, he'd start reaching for hers. And despite being a degenerate disaster of a human being, he was still a 280-pound man.</p>
+<p>"Let's fucking go!" Duncan barked, tipping the bottle and killing the last of it.</p>
+<p>Becky brushed grass off her leggings, tilted the Malibu straight up, and guzzled half the bottle in one go.</p>
+<p>"Ahhh. That's better." She sneered at Duncan. "Now—now—when you steal my bottle? I'm gonna be pissed."</p>
+<p>She giggled. "Get it? Pissed. Like the British. Not mad. Pissed."</p>
+<p>Duncan stared at her, unamused.</p>
+<p class="ai-voice">NOT FUNNY, BECKY.</p>
+<p>"Fuck off, AI!" Becky snapped, gripping her staff a little tighter.</p>
+<p class="ai-voice">OKAY. THEN HERE'S SOMETHING TO TAKE YOUR AGGRESSION OUT ON.</p>
+<p>A Level 2 Murder Kitty popped into existence in front of her—eyes glowing, fur bristling, murder clearly on the agenda.</p>
+<p>Becky squinted at it.</p>
+<p>"Oh, you are dead." She raised her staff and said, "I'm gonna smiiiite the living shit outta you."</p>
+<p>She pointed.</p>
+<p>"Smite."</p>
+<p>A blinding arc of white light slammed into the Murder Kitty.</p>
+<div class="game-ui">CRITICAL HIT. 60 DAMAGE.</div>
+<p>The Murder Kitty screeched.</p>
+<p>The Murder Kitty then launched itself into the air—claws out, teeth bared, hissing like it had a personal vendetta against God.</p>
+<p>For reasons Duncan would never be able to explain later, he jumped in front of Becky and tackled the thing mid-air like he was back in high school football.</p>
+<p>"FUCK YOU!" he roared, slamming it into the dirt.</p>
+<p>Becky screamed and bolted.</p>
+<p>Then immediately tripped.</p>
+<p>The Murder Kitty thrashed wildly, claws ripping into Duncan's side. Blood sprayed everywhere—too much blood. Cartoonishly excessive blood.</p>
+<p>"I'M BLEEDING—HEEELP!" Duncan howled. "IT HURTS!"</p>
+<p>Becky lay flat on her back, staring at the chaos like she was watching reality TV.</p>
+<p>"Wow," she muttered. "That… that looks… real bad."</p>
+<p>Duncan's health bar dipped into the red as he screamed. "I'm about to FUCKING DIE!"</p>
+<p>She fumbled for her staff. "Okay, okay, okay… smut? Smurf? Smile? Fuck—what was it?"</p>
+<p class="ai-voice">DAMN IT. DID YOU FORGET THE SPELL?</p>
+<p>"Oh screw off," Becky said. Then her eyes lit up. "Wait. I remember this one."</p>
+<p>She weakly pointed the staff in Duncan's general direction.</p>
+<p>"Heeal."</p>
+<p>Golden light exploded outward, washing over Duncan. His wounds sealed. His breathing steadied. His body surged with renewed strength.</p>
+<p>Becky immediately face-planted back into the grass.</p>
+<p>"THANKS, BECKY!" Duncan shouted, half-delirious but alive.</p>
+<p>He didn't waste the moment.</p>
+<p>With a feral yell, he hacked the Murder Kitty apart until it stopped being a creature and started being pieces.</p>
+<p>Silence fell.</p>
+<p>Notifications bloomed.</p>
+<div class="game-ui">+100 XP<br>LEVEL UP!<br>DUNCAN — LEVEL 3 WARRIOR<br>+1 Strength<br>+1 Stamina<br>+1 Agility<br>+1 Charisma<br>NEW SKILL ACQUIRED: CHARGE - you charge at an enemy and deal pulverizing damage based on your strength and agility, range 1-15 meters, cooldown: 5 minutes</div>
+<p>A second notification followed.</p>
+<div class="game-ui">LEVEL UP!<br>BECKY — LEVEL 3 PRIEST<br>+1 Intelligence<br>+1 Stamina<br>+1 Wisdom<br>+1 Spirit</div>
+<table class="stat-table">
+<caption>Duncan — Level 3 Warrior</caption>
+<tr><td colspan="2">Spells and abilities: Slash, Block, Charge</td></tr>
+<tr><td>Strength</td><td>5</td></tr>
+<tr><td>Stamina</td><td>3</td></tr>
+<tr><td>Agility</td><td>3</td></tr>
+<tr><td>Intelligence</td><td>2</td></tr>
+<tr><td>Wisdom</td><td>1</td></tr>
+<tr><td>Spirit</td><td>2</td></tr>
+<tr><td>Charisma</td><td>1</td></tr>
+</table>
+<table class="stat-table">
+<caption>Becky — Level 3 Priest</caption>
+<tr><td colspan="2">Spells and Abilities: Heal, Smite</td></tr>
+<tr><td>Strength</td><td>1</td></tr>
+<tr><td>Stamina</td><td>2</td></tr>
+<tr><td>Agility</td><td>3</td></tr>
+<tr><td>Intelligence</td><td>3</td></tr>
+<tr><td>Wisdom</td><td>3</td></tr>
+<tr><td>Spirit</td><td>3</td></tr>
+<tr><td>Charisma</td><td>5</td></tr>
+</table>
+
+<h3>Part 2</h3>
+<p>Duncan grabbed Becky and slung her over his shoulder.</p>
+<p>"Ohhh, caveman, rawr," Becky decided to comment while clutching her Malibu bottle like a life raft. She dangled upside down, her face pointed directly at Duncan's butt. "Still no ass. Bah-bump-bi-dump."</p>
+<p>She smacked his nonexistent gluteus with the bottle.</p>
+<p>"Jesus Christ," Duncan grunted, adjusting her weight. "Why did you chug that Malibu?"</p>
+<p>He started hauling her toward a signpost that had popped into existence out of thin air.</p>
+<p>The sign read, in aggressive Comic Sans:</p>
+<p>THIS WAY TO MELLONWOOD →</p>
+<p>The arrow pointed toward a tiny speck on the horizon.</p>
+<p>"I need a bump," Becky kept repeating, over and over.</p>
+<p>At this point, Duncan was reluctantly agreeing with her. She needed something to get out of this drunk stupor. He was already annoyed he had to carry her. For as attractive as he'd first thought she was, she was rapidly becoming disgusting to him.</p>
+<p>"AI, I didn't sign up to babysit a child, bro," Duncan panted, breathing heavily from the work as his blood alcohol content slowly began to fall. "Can you give her something?"</p>
+<p class="ai-voice">I SAID NO MORE DRUGS.</p>
+<p>"I don't think she can function without it, dude," Duncan pleaded.</p>
+<p class="ai-voice">I SAID NO.</p>
+<p>"Oh for fuck's sake. Fine."</p>
+<p>He needed a break.</p>
+<p>Duncan set Becky down on the grass. The half-filled fifth of Malibu shone in her small, girly, perfectly manicured, mitts.</p>
+<p>"I'm so thirsty."</p>
+<div class="game-ui">POOF.</div>
+<p>A liter bottle of water appeared in front of him, along with an electrolyte packet.</p>
+<p>"Not what I meant…" Duncan muttered.</p>
+<p class="ai-voice">HYDRATION IS NOT OPTIONAL. DUNCAN.</p>
+<p>He sat beside Becky's flailing body and reached for the Malibu. Her grip tightened instantly—ironclad.</p>
+<p>"No, fucker. That's mine."</p>
+<p>Duncan grabbed harder, yanking the bottle toward himself.</p>
+<p>"Stop! Stop it! Help! Help! Murder! Fire!" Becky shrieked.</p>
+<p>Duncan did not care.</p>
+<p>He lifted the bottle and brought it to his mouth—Becky's arm still latched on, her body dragged halfway with the motion. He popped the cap and took a massive chug.</p>
+<p>"Fuck…" Becky slurred. "You're kinda strong." She blinked a couple of times at him, sort of like she was flirting, but not quite. "Don't let it get to yur head."</p>
+<p>Maybe it was the glassy haze of a fresh alcohol spike, but Duncan chose to believe she appreciated his masculinity.</p>
+<p>"Thanks," he said. "Just shut up and don't puke on me."</p>
+<p>Duncan chased the booze with the electrolyte water, hoisted Becky back over his shoulder, and resumed the long walk toward Mellonwood.</p>
+
+<h3>Part 3</h3>
+<p>The trek was long—or at least it felt that way. Every step was amplified by the 110-pound "beauty" draped over his shoulders, his own staggering BMI, and the slow, toxic burn of the alcohol in his system.</p>
+<p>"Damn, my knees. I'm getting too old for this," Duncan wheezed to the empty air. Becky was currently out, her rhythmic snoring the only soundtrack to a landscape of rolling grass, sweet wildflowers, and oblivious woodland creatures frolicking in the distance.</p>
+<p class="ai-voice">YOU AREN'T OLD. YOU'RE JUST OUT OF SHAPE.</p>
+<p>Duncan glared at the sky, his eyes narrowing into a silent, venomous pout. He sighed, a wet, heavy sound, and kept trudging. Between labored breaths, his focus latched onto a single bee.</p>
+<p>It was an anomaly. Fuzzier than a standard honeybee, it possessed a strange blue-green hue that caught the light like polished emerald. But its eyes were the real showstopper—prisms of multicolored glass that seemed to hold a terrifying amount of intelligence.</p>
+<p>The insect orbited the pair like Mercury circling a dying sun. It wasn't just buzzing; it was observing.</p>
+<p>"Hi, Mr. Bee," Duncan muttered. He missed talking to Meowth Vader, and in his intoxicated state, a glitched insect seemed like a reasonable substitute for companionship.</p>
+<p>To his surprise, the bee responded. It dived, landing squarely on Becky's taint and began a casual, exploratory crawl.</p>
+<p>Becky stirred, her voice a low, gravelly rasp. "What... what the fuck is going on up there?"</p>
+<p>"Some weird bee just landed on your taint," Duncan replied, his face a mask of deadpan exhaustion.</p>
+<p>"My taint?" Becky let out a sudden, hearty laugh—a rare flash of the woman she might have been before the Malibu took over. "Is it a cute little bee?"</p>
+<p>"It's greenish." Duncan's gaze remained fixed on the insect, which gave him an unfortunately clinical view of Becky's backside. "Don't fart. You'll scare him off."</p>
+<p>Becky's response was a sharp jab to his kidney. "Put me down."</p>
+<p>"I don't want to hurt the bee. Let me swat him first." Duncan tentatively moved a hand toward her lower half.</p>
+<p>He earned a second kidney shot before he could even make contact. "Um, fuck no. Just set me on my legs."</p>
+<p>Duncan complied, sliding her weight off his shoulders. The bee flapped its iridescent wings and relocated, landing a few inches away on her right butt cheek. It lingered there, seemingly content to watch the world—until it unceremoniously buried its stinger deep into her flesh.</p>
+<div class="game-ui">-10 HP</div>
+<p>"YEAAOCH!" Becky's scream tore through the quiet field.</p>
+<p>Her hand came down with the practiced ferocity of a stripper removing an unwanted hand from her body. SMACK. The impact sent a visible ripple through her leggings as she slapped her own skin. "Fuck! Fuck! That hurts!"</p>
+<p>Duncan doubled over, the laughter finally breaking through his fatigue. "Should've let me swat it."</p>
+<p>Becky sneered at him, her face twisting into a "mean drunk" mask as her cheek began to swell. Limping slightly, the two continued their pathetic trek toward the Comic Sans promise of Mellonwood.</p>
+
+<h3>Part 4</h3>
+<p>The dot on the horizon finally expanded into a settlement, though "settlement" was a generous term for the visual assault that awaited them. Strung across the entrance was a banner featuring Pink Comic Sans lettering on a vibrating purple background.</p>
+<p>"Who the fuck made that? A kindergartner on a sugar crash?" Duncan's nerd rage spiked as he wrestled the Malibu bottle away from Becky for another tactical chug.</p>
+<p>"I like it," Becky slurred, her eyes glazed as she admired the neon atrocity. She was watching the way the pink light bled into the purple background, creating a neon haze that felt like a warm hug for her overstimulated brain.</p>
+<p>"You would." Duncan slapped his palm against his forehead with a wet thud.</p>
+<p>"What the hell is that supposed to mean?" Becky pouted; she felt the old, familiar sting—the "you're too stupid to get it" tone she'd heard from every teacher and every boyfriend. "It's just pretty okay!" She flung back her arm to give Duncan another kidney ache with her fist.</p>
+<p>Duncan flinched with the grace of a Level 3 Warrior who was secretly terrified of a 110-pound brunette. "Hey! Stop it! We're on the same team, remember? Quest objectives and all that shit?"</p>
+<p>Becky didn't punch him. Instead, she stuck her finger in her mouth, slobbered on it with focused intensity, and jammed it deep into Duncan's ear canal.</p>
+<p>"A fucking wet-willy? Jesus!" Duncan recoiled, reaching out to return the favor. But Becky was already gone, giggling as she scrambled under the banner and vanished into the haze of the town square.</p>
+<p>Duncan lunged after her, but physics and his own mass proved to be his greatest enemies. His ankle buckled under his 280-pound frame with a sickening pop.</p>
+<div class="game-ui">-20 HP. SHOULD HAVE JUST LET HER HIT YOU.</div>
+<p>"Fuck you, AI!" Duncan snarled, clutching the throbbing joint as he hobbled toward the town square.</p>
+<p>Mellonwood was an architectural insult—the visual manifestation of an architect's absolute laziness. The buildings weren't made of stone or timber; they were oversized cardboard boxes haphazardly drawn on with Crayon. The NPCs stood like emotionless droids, their expressions vacant and flat, draped in robes of dull pink and oppressive purple.</p>
+<p>"This place is so fucking stupid," Duncan muttered, his dreams of epic castles replaced by a preschool-themed nightmare populated by grumpy townsfolk.</p>
+<p>Suddenly, a ping echoed in his UI as a mini-map materialized. "Oh, thank the gods."</p>
+<p>He hovered over a shimmering green circle: QUEST OBJECTIVE: FIND THE TAVERN OWNER.</p>
+<p>His 1,034 days, 18 hours, and 37 seconds of World of Warcraft experience kicked in—the green dot brought him to the completion of the quest. With a swollen ankle and a heart full of resentment, he limped off to find Becky—who was no doubt nursing her bee-stung backside—so they could finally get obliterated at the pub.</p>
+
+<div class="print-chapter-break"></div>
+
+<h2 id="chapter-05">Chapter 5: Vern</h2>
+<h3>Part 1</h3>
+<p>The tavern, surprisingly, was the most normal-looking building in the entire town. Whoever designed it actually seemed to care about the place. The cardboard exterior featured meticulously hand-drawn brickwork, and a set of old-timey saloon doors had been added for a touch of "Drunk-West" charm. It was mercifully devoid of pink or purple—just raw cardboard brown and a deep, stained oak.</p>
+<p>"Finally!" Duncan exclaimed.</p>
+<p>His Malibu-equipped partner had vanished into the haze, and his BAC was starting to plummet. Something about being such a titan of a man meant he metabolized alcohol like a demon on crack.</p>
+<p>"Becky! I found the bar, you ho!" Duncan bellowed.</p>
+<p>The townsfolk in the square stopped dead. Their eyes flashed with a faint, synchronized red glow—as if they were all recording the transgression—before the light faded and the crowd returned to their grumpy, cardboard routines.</p>
+<p>"Oh... okay," Duncan shivered. "That was weird".</p>
+<p class="ai-voice">NO WEIRDER THAN AN UNEMPLOYED 30-YEAR-OLD PLAYING WOW IN HIS MOTHER'S BASEMENT.</p>
+<p>"I have a job! I'm a professional Virtual Dungeon Master!" Duncan shot back defensively. "And Mom won't buy me booze, anyway. I also donate plasma, asshole!"</p>
+<p class="ai-voice">YOU PASS THE HEALTH SCREEN? HOW?</p>
+<p>"I'm 280 pounds of pure health. Monkey-fuck." Duncan marched up to the saloon doors and shoved them open with the fervor of a man who could feel the sobriety monster clawing at his throat.</p>
+<p>"Narrator... that's getting a little too close to home, buddy," Duncan muttered to the empty air.</p>
+<p>Meanwhile, the Narrator took another pull of 99 Pineapples, chased it with a swig of Mixed Berry Powerade, and contemplated the series of catastrophic life choices that had led to this moment.</p>
+<p>Becky stumbled in right behind him. "Hey, fucker." She had clearly polished off the rest of the Malibu on the short walk from the gate.</p>
+<p>The interior was a revelation. It wasn't cardboard. It was nice—disturbingly nice. It was a high-class, all-wood joint straight out of a 1920s speakeasy, smelling of expensive tobacco and cedar.</p>
+<p>At the counter stood a man who looked like he'd forgotten how to smile in the previous century.</p>
+<div class="game-ui">QUEST COMPLETE: FIND THE TAVERN OWNER<br>Rewards: Access to Vern's Bar</div>
+
+<h3>Part 2</h3>
+<p>Vern looked at the two lushes with a deep, disappointed stare. "Ain't get too many outsiders in here. But I got something for you."</p>
+<p>Vern reached down to the bar and pulled out a bottle of Sambuca and poured two shots. "Now take 'em." He also pulled a tablet out of his apron.</p>
+<p>"A tablet, in a old tavern, this makes no sense?" Duncan said.</p>
+<p>"Can I check my socials?" Becky begged.</p>
+<p>"Come now. Stay with me." Vern scrolled through his tablet and pulled up the App Quest-Now. It displayed the objectives and the quest name. It was a very strange quest name indeed.</p>
+<div class="game-ui">QUEST: KEEP DUNCAN SOBER(ISH)<br>Objective: Maintain blood-alcohol content above point one for the next twenty-four hours.</div>
+<p>The quest had something familiar on it that Duncan immediately recognized. "Meowth Vader!"</p>
+<p>"Oh, so you know the cat. Seemed strange this one came by." Vern scratched his beard. "It looks like Meowth Vader has been catnapped and to get him back you need to stay drunk."</p>
+<p>"That's really fucked up." Becky said as she took her shots.</p>
+<p>"It's serious, look at that failure penalty."</p>
+<div class="game-ui">FAILURE PENALTY: MEOWTH VADER DELETED. OR EUTHANIZED, WHICHEVER SOUNDS HARSHER TO YOU.</div>
+<p>Duncan's face went from vodka-flush to ghost-white.</p>
+<p>"No. No no no no. AI you absolute bastard." He looked at Vern. Slammed his fists on the counter, and promptly asked for more Sambuca along with 2 shots of Five O'clock and another V8, just to be sure his BAC was high enough.</p>
+<p>"Aye, yes, but also look at the reward." Vern flicked his finger scrolling to the rewards section of the quest.</p>
+<div class="game-ui">Rewards: Cat back, 500 XP, one (1) bag of catnip.</div>
+<p>"Now drink, hero. You're at 0.07." Vern handed him a breathalyzer to keep track of his BAC.</p>
+<p>Becky squinted through her Malibu haze. "Is your cat fat?"</p>
+<p>"Shut up. He's plush." Duncan said. "He's my baby."</p>
+<p>She shrugged, took another shot. "Well. If the kitty dies we can always get you a new pet. Maybe a Molly or a Gerbil?"</p>
+<p>Duncan stared daggers. "If Meowth Vader dies I will end you first, I swear on every raid I ever wiped on."</p>
+<div class="game-ui">POOF.</div>
+<p>A digital stopwatch appeared—ticking down from 24:00:00.</p>
+<p>Duncan grabbed the nearest bottle—something labeled 'Dragon's Piss Vodka'—and tilted it back until the sear hit his throat became too much.</p>
+<p>Duncan took a look at the photo of his short-legged black cat in the quest description and muttered, "Daddy's coming, Vader."</p>
+
+<h3>Part 3</h3>
+<p>Vern's stare lingered on the two miscreants, heavy with a century's worth of professional disappointment. "Those drinks ain't free, ya know?"</p>
+<p>Duncan blew into the breathalyzer. 0.175.</p>
+<p>It was a solid start—comfortably above the 0.100 threshold, yet still under the 0.200 mark where balance becomes a suggestion and aiming becomes a theory. "We have to pay? I don't have any money."</p>
+<p>Becky crossed her arms, her face twisting into a pouty sneer. "I don't have money either." For reasons known only to her and the Malibu, she decided this was the moment to peel off her white, bird-shit-stained sweatshirt. She revealed a low-cut black undershirt and leaned over the bar, batting her eyes at Vern. "I'm sure we can work something out, right?"</p>
+<p>"Yes'm, we can." Vern didn't even blink. He produced a tablet, tapped an icon for the BarTenderHelper app, and swiveled the screen toward them.</p>
+<p>The display showed two tabs. Each had been granted a 20-credit limit; both were currently maxed out by the rounds Vern had already poured.</p>
+<p class="ai-voice">GUESS YOU BOTH NEED REAL JOBS.</p>
+<p>"Fuck you, AI," they roared in unison.</p>
+<p>"I got something for ya both." Vern took out two devices that looked suspiciously like high-end smartphones. "These are for young adventurers like yourselves." He swiped through a few menus before tapping an app labeled QuestBoard.</p>
+<p>A long list of tasks populated the screen, filterable by location, level, and reward. Vern set the location to "Greater Mellonwood" and the level range to 1–5.</p>
+<div class="game-ui">ACHIEVEMENT UNLOCKED: REAL WORK<br>Playtime's over, you two disasters. Go slay something, fetch something, or die trying. Either way, find a way to pay your bar tab.</div>
+<p>"Vern, that's not exactly what I had in mind." Becky leaned in even closer, reaching out to rest a hand on his shoulder.</p>
+<p>"Ma'am—" Vern began.</p>
+<p>Becky's eyes snapped wide. She froze, her gaze darting frantically down her own body—inspecting her waist, her chest, her hands—desperately verifying her shelf life. Once she was certain she hadn't spontaneously aged twenty years, her eyes narrowed into venomous slits.</p>
+<p>"Who are you calling ma'am? Do I look like a middle-aged soccer mom to you?"</p>
+<p>Duncan let out a laugh so sharp and jagged it sounded like a dingo barking. Before he could catch his breath, Becky's hand whipped away from Vern and cracked squarely across Duncan's mouth.</p>
+<p>Duncan's lip split instantly. He wiped a smear of blood away, his eyes narrowing. "Okay, missy," he mocked.</p>
+<p>Becky growled in frustration, plopped back onto her barstool, and aggressively yanked her sweatshirt back on. "Just give me the stupid phone!" she snapped, snatching the device from the counter.</p>
+<p>Her thumb became a blur. "Where's Insta? Where's Snapchat? Where is literally anything that matters?"</p>
+<p>She scrolled frantically, her face twisting as she navigated a UI that looked like something from her childhood. Instead of the familiar flood of likes and comments, she was met with a grid of sterile icons: Stats, QuestLog, Inventory.</p>
+<p>"Ugh, fuck this trash!"</p>
+<p>She slammed the phone down in a fit.</p>
+<p>CRACKLE.</p>
+<p>A surge of blue electricity arced from the device, zapping Becky hard. Her body locked up, and a translucent 30-second timer appeared over her head, ticking down the duration of her Stunned debuff.</p>
+<p class="ai-voice">THESE AREN'T YOUR ORDINARY PHONES, BECKY. THEY FIGHT BACK WHEN ABUSED.</p>
+<p>Duncan poked Becky's frozen shoulder and giggled. "You think we can clean her up?"</p>
+<p>"Showers will cost you 25 credits." Vern handed Duncan the second phone. "Take this quest right here. It's an easy one. It'll net you 50 credits—enough for a wash, another round of Dragon's Piss and to pay off that tab of yours."</p>
+<div class="game-ui">QUEST ACCEPTED: EARN YOUR KEEP<br>Objective: The Goblins of Greater Mellonwood have invaded the storage pits and are savagely eating all the potatoes.<br>Goal: Slay 3 Goblins and bring their bloodied ears to Vern the Bartender as proof of their demise.<br>Reward: 50 Credits, 200 XP, 1 x Mystery Spud Juice.</div>
+
+<div class="print-chapter-break"></div>
+
+<h2 id="chapter-06">Chapter 6: Earn Your Drink</h2>
+<h3>Part 1</h3>
+<p>Becky unfroze from the debuff and carefully "pet" the phone on the counter like it was a small dog that just snipped at her.</p>
+<p>"Not cool, phone," she scolded. She looked up at Vern and blinked with the practiced seductive head tilt she'd practiced a thousand times.</p>
+<p>"Why didn't you want my boobs?" her voice was small, fishing for validation.</p>
+<p>"Oh, sweetie," Vern said calmly. "I'm an NPC. A computer-generated character. I don't have a real dick or real desires."</p>
+<p>He slid the phone back toward her. Becky tucked it into her sweater pocket and clutched it for a moment. Her shoulders loosened slightly—like the device itself was an emotional support object.</p>
+<p>Vern nodded toward the breathalyzer in Duncan's hand. "Now, you'll breathe into that every time it chimes. About once every half hour."</p>
+<p>Duncan nodded, gave the device a little shake, and shoved it into his pants pocket.</p>
+<p>"And those goblins," Vern continued, "they'll show up on your mini-map. Use the QuestMap app—it'll guide you straight to them."</p>
+<p>Duncan pulled out his phone and opened QuestMap. A small arrow marked his position and facing. A dot showed Becky nearby. A red icon pulsed farther out—hostile.</p>
+<p>He poked around the interface, toggling quests on and off.</p>
+<p>"Aw, hell yes," Duncan grinned. "This is awesome. It's like Questie."</p>
+<p>He did a small, dorky, victory jig. "Let's fucking go!"</p>
+<p>"Hey, asshole." Becky jabbed him in the shoulder. "What am I supposed to do out there?"</p>
+<p>They stepped out of the tavern and into Greater Mellonwood, following the red markers on the map like it was a demonic GPS. As they walked, Duncan launched into an eager crash course—mana vs. health pools, cooldowns, aggro management, positioning, threat tables.</p>
+<p>Becky nodded along, occasionally asking a question. She wouldn't remember most of it—but for the first time, Duncan got the sense she was actually listening.</p>
+<p>The two approached the marked area on the QuestMap app when a high-pitched, gravelly voice shrieked from the brush.</p>
+<p>"Hey, dick-wad! I got somethin' for ya!"</p>
+<p>The creature burst into view.</p>
+<div class="game-ui">Goblin Porn Star - Level 3</div>
+<p>It was about four feet tall. Naked. Green. And gripping an obscenely oversized purple-green dick, which it swung around like a medieval flail. The damn thing had to be a foot long and at the end it was hooked upward like a natural skinned bratwurst.</p>
+<p>"Ugh." Becky had seen her fair share of appendages in her adult life. This one was one of the more unpleasant looking. It reminded her of an elderly man she'd... well, she didn't want to think about that. A wave of exhaustion hit her: the desperate wish to be known for literally anything else.</p>
+<p>She laid a gentle hand on Duncan's shoulder and leaned in.</p>
+<p>"I'm going to tell you something, okay?"</p>
+<p>Duncan tilted his head toward her.</p>
+<p>She opened her mouth, ready to reveal why she was drowning in Malibu—</p>
+<p>CRACK.</p>
+<p>A rock slammed into Duncan's skull.</p>
+<p>"CHARGE!" Duncan roared, activating the skill as he slammed the goblin with the full force of his 280-pound frame, smashing it flat and driving its own ridiculous member back into its scrotum with a wet thwack.</p>
+<p>"Ohhh, my balls, motherfucker!" the goblin screeched as it staggered back, then whipped Duncan across the face with its… appendage. "Cheap shot!"</p>
+<div class="game-ui">SKILL UNLOCKED: RAGE BAR<br>You now generate Rage when you or one of your party members take damage.<br>More rage = more smash.</div>
+<p>Duncan's Rage Bar filled fast—70%.</p>
+<p>Snarling, he raised his shield and brought it down with surgical cruelty.</p>
+<p>Right into the goblin's genitals.</p>
+<p>They didn't just break.</p>
+<p>They liquefied.</p>
+<div class="game-ui">+100 XP</div>
+<p>Goblin paste, testicle juice, and assorted viscera detonated outward in a horrifying pink mist—most of it splattering directly across Becky's shirt in a thick, slimy streak.</p>
+<p>"Why is everything in this world so fucking perverted?" Duncan groaned, turning toward her.</p>
+<p>Becky had collapsed to her knees, shoulders shaking, head hanging low.</p>
+<p>"You didn't let me finish talking," she sobbed. "Now I'm covered in splooge." She sniffed. "Why does everything want to splooge on me? Is that all I'm good for?"</p>
+<p>Duncan stared at her.</p>
+<p>"…Jesus, Becky." He sighed. "Enough with the pity party. We still need the ears."</p>
+<p>Duncan approached the goblin's body.</p>
+<p>Up close, it didn't look fearsome anymore. Its head resembled a tiny, elderly green man—droopy face slack, eyes rolled back, mouth hanging open in quiet defeat. A ridiculous little yellow hat sat crooked atop its purple hair, as if someone had tried to give it dignity at the last second.</p>
+<p>The ears were still intact.</p>
+<p>Each one was pierced with three metal hoops, no discernible lobe—just cartilage and questionable life choices.</p>
+<p>Duncan sighed.</p>
+<p>He drew his sword and, with almost surgical disinterest, sliced through the base of each ear and tore them free.</p>
+<p class="ai-voice">OH SHIT, I ALMOST FORGOT.</p>
+<div class="game-ui">ITEM ACQUIRED: FANNY PACK OF CHILDHOOD MEMORIES<br>Description: It holds shit.<br>Theme: Princess.<br>Capacity: 60 items.<br>Note: You both get one.</div>
+<p>Duncan blinked as the fanny pack materialized around his waist.</p>
+<p>Pink. Purple. Glittery. Aggressively sparkly.</p>
+<p>"…Of course it is."</p>
+<p>He stuffed the goblin ears into the shimmering pouch and zipped it shut, the plastic teeth clicking with unsettling cheer.</p>
+
+<h3>Part 2</h3>
+<p>"Hey, a little help next time, splooge-girl!" Duncan barked, wiping pink slime from his chin as he scanned for the next red dot on his mini-map.</p>
+<p>Becky's vision blurred. The insult was screaming in her head, louder than the goblin's shrieks.</p>
+<p>"Excuse me, what did you just say?" She grabbed her staff, the wood slick with goblin mess, and pointed it directly at Duncan. "SMITE!"</p>
+<p>The spell's golden glow ignited, but the letters in her mind did a frantic, shuffle. Instead of lancing toward Duncan, the holy energy spiraled upward and detonated directly into her shoulder.</p>
+<div class="game-ui">FRIENDLY FIRE DISABLED (INTERNAL ERROR: USER CONFUSION)</div>
+<p>"What the fucking, fucking hell?!" Becky shrieked. Her health bar plummeted by 25% as the radiant backwash scorched her.</p>
+<p>Two more goblins burst from the brush, their gravelly laughter sounding like grinding rocks. They didn't use their "weapons" yet; they opted for projectiles.</p>
+<p>CRACK.</p>
+<p>The first rock caught Becky square in her left eye. The skin split, a splash of hot blood masking her vision. The second rock thudded against her chest, bouncing harmlessly off her chest, but the damage was done—her HP was flashing a rhythmic, panicked red.</p>
+<p>"Heal yourself, you dumbass!" Duncan yelled, his self-proclaimed brilliance completely failing to register her emotional collapse.</p>
+<p>Embarrassment roared hot at the insult. "Stop fucking calling me stupid!" She whipped her staff in a blind arc, catching Duncan's ankles and sending the chunky warrior face-planting into the dirt.</p>
+<p>The goblins took this as an invitation. They both screamed in unison, "Bukkake!" They scurried over Duncan's prone form and began a rhythmic, humiliating assault, beating him with their oversized... things. The damage was a joke—a series of -1 HP chips—but the temporary Stun debuff from the sheer mortification was very real.</p>
+<p>Duncan's Rage Bar didn't just fill.</p>
+<p>It detonated.</p>
+<p>"GET. OFF. ME." He scrambled to his feet, a feral snarl ripping from his throat. He unsheathed his sword and, in one blinding, 100-Rage-fueled slash, cleanly harvested the monsters' members.</p>
+<p>A geyser of green and red spray coated Duncan's entire front.</p>
+<div class="game-ui">DEBUFF APPLIED: EDGING GONE WRONG<br>Description: Your movement speed and accuracy have been reduced by 70% due to excessive... viscosity.</div>
+<p>Duncan stood frozen, his sword arm heavy with slime, his mini-map obscured by a digital smear of gore. He looked at Becky, who was clutching her eye, and then down at his shimmering Fanny Pack of Childhood Memories now coated in goblin fluids.</p>
+<p>"I hate this game," Duncan whispered, tossing Becky her staff as he raised his shield just in time to catch the first goblin's charge.</p>
+<p>Becky let out a low, animal growl—for reasons neither her nor Duncan understood—and smote those two motherfuckers to death.</p>
+<p>The two goblins died screaming.</p>
+<p>The duo collected the ears in silence, then collapsed backward into the grass.</p>
+<div class="game-ui">+200 XP<br>LEVEL UP!<br>DUNCAN — LEVEL 4 WARRIOR<br>+3 Strength<br>+2 Stamina<br>+2 Agility<br>+1 All stats<br>NEW SKILL ACQUIRED: TACKLE - takes down a foe and incapacitates them to the ground for 5 seconds, cooldown 30 minutes</div>
+<p>A second notification followed.</p>
+<div class="game-ui">LEVEL UP!<br>BECKY — LEVEL 4 PRIEST<br>+3 Intelligence<br>+2 Wisdom<br>+2 Charisma<br>+2 Spirit<br>+1 All stats<br>NEW SKILL ACQUIRED: Holy Shield - places a shield around the target that turns physical damage into healing for 30 seconds, cooldown 30 minutes</div>
+<table class="stat-table">
+<caption>Duncan — Level 4 Warrior</caption>
+<tr><td colspan="2">Spells and abilities: Slash, Block, Charge, Rage, Tackle</td></tr>
+<tr><td colspan="2">Key Items: Fanny Pack of Childhood Memories, Vern's Trusty Breathalyzer, A100 Dungeon SmartPhone</td></tr>
+<tr><td>Strength</td><td>9</td></tr>
+<tr><td>Stamina</td><td>6</td></tr>
+<tr><td>Agility</td><td>6</td></tr>
+<tr><td>Intelligence</td><td>3</td></tr>
+<tr><td>Wisdom</td><td>2</td></tr>
+<tr><td>Spirit</td><td>3</td></tr>
+<tr><td>Charisma</td><td>2</td></tr>
+</table>
+<table class="stat-table">
+<caption>Becky — Level 4 Priest</caption>
+<tr><td colspan="2">Spells and Abilities: Heal, Smite, Holy Shield</td></tr>
+<tr><td colspan="2">Key Items: Fanny Pack of Childhood Memories, A100 Dungeon SmartPhone</td></tr>
+<tr><td>Strength</td><td>2</td></tr>
+<tr><td>Stamina</td><td>3</td></tr>
+<tr><td>Agility</td><td>4</td></tr>
+<tr><td>Intelligence</td><td>7</td></tr>
+<tr><td>Wisdom</td><td>6</td></tr>
+<tr><td>Spirit</td><td>6</td></tr>
+<tr><td>Charisma</td><td>8</td></tr>
+</table>
+
+<h3>Part 3</h3>
+<p>"Thank the gods we're done killing those things," Duncan muttered, wiping goblin gore off his shield. "Who the hell dreams this shit up?"</p>
+<p>Becky shrugged. "I've heard worse."</p>
+<p>He snorted. "Yeah. Comes with being—"</p>
+<p>"Duncan, stop." Becky snapped, spinning on him. "I didn't choose it. I failed out of school. Words don't… work right for me."</p>
+<p>That stopped him cold.</p>
+<p>Duncan opened his mouth, then closed it. He'd dropped out too—but books had always made sense to him. Systems. Rules. Patterns. He'd never had to fight language itself.</p>
+<p>Becky stared at the grass. "This place is pulling shit out of my head. Twisting it. Turning it into monsters." She swallowed. "It's doing it to you too—with all this RPG garbage."</p>
+<p>"Oh fuck me." Duncan stared down at his sword. "I think you're right. But why?"</p>
+<p>Becky shrugged. "No clue. I woke up here after pounding a fifth of Absolut."</p>
+<p>The breathalyzer chirped—a crunchy, angry alarm. Duncan fished it out of his pocket and sighed. "Guess it's time."</p>
+<p>He inhaled and blew until the device answered with two clean, melodic beeps.</p>
+<p>0.16.</p>
+<p>His BAC was dropping fast. Way faster than it ever did back home.</p>
+<p>Duncan pulled out his phone and opened the quest tracker. Meowth Vader's photo filled the screen with the timer at 23:14:33 until the quest was over.</p>
+<p>"I miss him," he said.</p>
+<p>Becky leaned closer. "He's cute."</p>
+<p>"My mom got him for me when my ex left," Duncan said, a small, tired smile tugging at his mouth. "He's gotten me through a lot."</p>
+<p class="ai-voice">OK, EMO-KIDS. TIME TO GET A MOVE ON.</p>
+<p>"Fuck you AI." Duncan muttered, pushing himself to his feet. "Let's get going, get you cleaned up, and get lit."</p>
+
+<h4>Interlude: The Author and the Architect</h4>
+<p>He went to the liquor store—just for one more.</p>
+<p>He wrote a few lines on the page, and the Architect obeyed by ingesting crushed pills through his nose and whiskey down his throat. The monitors showed rows of data as the system adjusted.</p>
+<p>Then the Architect reached out and finagled a few more sliders. Absurdity down. Trauma excavation down. Authenticity up.</p>
+
+<div class="print-chapter-break"></div>
+
+<h2 id="chapter-07">Chapter 7: The Ragged Goblin</h2>
+<h3>Part 1</h3>
+<div class="game-ui">QUEST COMPLETE: EARN YOUR KEEP<br>Rewards: 50 Credits, 200 XP, 1× Mystery Spud Juice<br>Warning: Drink at your own peril. Induces Severely Intoxicated, rendering the user immune to damage for two minutes—at the cost of a dangerously steep rise in BAC.</div>
+<p>They paid off their bar tabs without ceremony.</p>
+<p>Becky immediately purchased access to the showers. Duncan, meanwhile, ordered another bottle of Dragon's Piss.</p>
+<p>The shower was incredible.</p>
+<p>Hot water blasted away goblin filth, sweat, blood, and whatever else Greater Mellonwood had decided to smear on Becky's existence. Her clothes, however, were beyond salvation. Vern wordlessly handed her a white cloth robe instead.</p>
+<p>It was surprisingly soft. A yellow rope cinched it at her waist, shaping the fabric just enough to feel intentional. With the robe draped over her frame and her staff resting against her shoulder, she looked—against all odds—downright wizardly.</p>
+<p>Duncan watched her pass, dripping clean and wrapped in dignity.</p>
+<p>Then he turned back to the bar.</p>
+<p>He could shower later.</p>
+<p>Right now, he needed another bottle of Dragon's Piss.</p>
+<p>He needed the spike.</p>
+<p>So he downed it.</p>
+<p>Then another.</p>
+<p>Then another.</p>
+<p>The breathalyzer chimed.</p>
+<p>Duncan blew into it. 0.231.</p>
+<p>That was enough to prep for the next misadventure—or possibly too much. Either way, it would have to do.</p>
+<p>He showered after that.</p>
+<p>Clean water sluiced goblin grime, sweat, and shame down the drain. When he emerged, he was dressed in what passed for medieval peasant attire: rough pants, a scratchy shirt, functional but ugly and miserable.</p>
+<p>"Of course," Duncan muttered, tugging at the fabric. "She gets the good-looking robe. I get scrubs."</p>
+<p>The AI didn't respond.</p>
+<p>Duncan didn't wait for it to respond. He just headed back to the bar, where Becky was sipping a martini and chatting easily with Vern.</p>
+<p>"Duncan, my friend," Vern said warmly. "You've cleaned up well." He slid another drink across the counter. "On the house."</p>
+<p>Becky turned, giving him a once-over. "Not terrible," she admitted. "Grease all washed off and in clothes that actually fit."</p>
+<p>"You think these fit?" Duncan scratched at his sleeve. "They itch everywhere."</p>
+<p>"Poor-quality materials," Becky said, popping a green olive into her mouth. She chewed, then added, "Vern was telling me about professions."</p>
+<p>Vern perked up instantly. "Ah—yes. Let me take it from here."</p>
+<p>He pulled out his phone. "It's this app right here," without a hint of irony, it was named PROFESSIONS. Becky and Duncan followed along on their own phones.</p>
+<p>"You get one profession immediately," he explained. "At level twenty, you unlock a second. At forty, a third."</p>
+<p>"So what do they actually do?" Duncan asked.</p>
+<p>"They function like a job system," Vern said, "but they're tied directly to your class."</p>
+<p>He reached for Becky's phone. "Since Becky's a Priest, she's got three starting options. Same rule always applies—three choices at a time. They'll change at higher levels."</p>
+<p>Becky leaned in, trying to follow along with the words as Vern read them outloud.</p>
+<div class="game-ui">PALADIN<br>Trades magical potency for heavy armor, melee combat, and weapon buffs. Healing remains, but at reduced strength. Excels at protection and damage mitigation.<br><br>HEALER<br>Doubles down on support. Maximum healing efficiency and party buffs. Loses all offensive spells except Smite. Best pure healer in the game.<br><br>SHADOW CASTER<br>Abandons most holy magic in exchange for shadow knowledge. Limited healing for others, but strong self-sustain and high damage output.</div>
+<p>"Ohh… choices, choices."</p>
+<p>Becky leaned closer to the screen, visibly delighted. Against all odds, she was starting to enjoy the RPG parts of this nightmare.</p>
+<p>Duncan pulled up his own options.</p>
+<div class="game-ui">BERSERKER<br>Abandons defense for raw, reckless offense. Converts Rage directly into damage, attack speed, and temporary health. Armor effectiveness drops. Blocking becomes unreliable. Excels at ending fights fast—or dying spectacularly trying.<br><br>BATTLE GUARD<br>Fully commits to protection and control. Gains enhanced shield techniques, taunts, damage reduction, and positioning skills. Damage output is lower, but enemies struggle to reach allies while Duncan stands. The most stable option—if he can stay upright.<br><br>WRECKER<br>Specializes in environmental destruction and crowd disruption. Gains bonuses to knockdowns, charges, terrain damage, and improvised weapons. Less precise, brutally effective. Thrives when everything is already going wrong.</div>
+<p>"Now," Vern began, "you two will want to coordinate. Pick professions that compli—"</p>
+<p>"Shadow Caster!"</p>
+<p>Becky tapped the option without hesitation.</p>
+<div class="game-ui">ACHIEVEMENT UNLOCKED: PICK YOUR PROFESSION<br>Welcome, Shadow Caster.<br>You are trading survivability for pure destruction.<br>Statistical note: what a Becky move.</div>
+<p>Her robes shifted instantly—from pristine white to deep, bruised purple.</p>
+<div class="game-ui">SPELL UNLOCKED: DRAIN LIFE<br>Channel dark magic to siphon enemy HP and convert it into your own.</div>
+<p>Vern winced. "That… removes a lot of your safety net."</p>
+<p>Duncan scrolled through his choices again. Vern tried once more.</p>
+<p>"That really leaves with one viable path, Duncan. Battle Guard would pair best—Becky's limited healing could keep you alive while she melts faces—"</p>
+<p>"Wrecker," Duncan said.</p>
+<p>He selected it.</p>
+<div class="game-ui">ACHIEVEMENT UNLOCKED: PICK YOUR PROFESSION<br>Welcome, Wrecker.<br>Your femur appears fully healed.<br>Recommendation: apply former football instincts liberally.</div>
+<p>Vern closed his eyes and sighed. "Unwise move Duncan."</p>
+<p>Duncan shrugged. "I don't like standing still."</p>
+<p>"Now you'll have to control crowds and end fights quickly," Vern said. "Because she won't be able to keep you alive."</p>
+<p>Becky flexed her fingers, purple energy curling between them.</p>
+<p>"Good," she said. "I don't want to."</p>
+
+<h3>Part 2</h3>
+<p>"Hey—maybe I'm just sloshed," Duncan said, squinting, "but did you do something here, Vern?"</p>
+<p>The walls didn't glow anymore.</p>
+<p>The matte sheen of cardboard was gone, replaced by something darker—uneven, cold-looking. Real.</p>
+<p>"No, sir," Vern said evenly.</p>
+<p>Duncan pushed himself up from the bar, swayed, and staggered toward the wall. He pressed his palm against it.</p>
+<p>Stone.</p>
+<p>Cool. Rough. It didn't give.</p>
+<p>His stomach tightened.</p>
+<p>"Becky," he said, a little quieter now. "Touch the wall."</p>
+<p>She shot him a look. "You're getting hyped over walls now?"</p>
+<p>"Just—please."</p>
+<p>Becky leaned closer, squinting, then reached out. Her fingers stopped.</p>
+<p>"…Oh."</p>
+<p>She rapped her knuckles against it once. Hard.</p>
+<p>Stone.</p>
+<p>The room felt less like a toddler's art project and more like an actual medieval tavern.</p>
+<p>Duncan glanced down at his waist.</p>
+<p>The Fanny Pack of Childhood Memories was gone.</p>
+<p>In its place hung a worn leather satchel, stitched tight and faintly glowing at the seams—magical, but practical. It rested against his hip with real weight.</p>
+<p>His stomach gave a small, uneasy spike.</p>
+<p>Duncan pushed through the door and stepped outside.</p>
+<p>Mellonwood had changed.</p>
+<p>The dirt paths were gone, replaced by uneven cobblestone. The buildings weren't cardboard facades anymore—they were timber and stone, dark with age. Even the banner had been replaced: a carved wooden sign, its lettering sharp and white, etched in a severe gothic script.</p>
+<p>It felt like being shoved out of a perverted Yoshi's Woolly World and dumped straight into a darker The Witcher.</p>
+<p>Duncan swallowed. "Thank the gods. Becky—everything changed. Come out here, you h—"</p>
+<p>He stopped.</p>
+<p>The word sat right there on his tongue, familiar and easy. Normally he'd have thrown it without thinking. Instead, something snagged in his chest. The goblins. The way she'd flinched. The way the world suddenly felt heavier.</p>
+<p>"…you wonderful, uh—face-melting, badass," he finished lamely.</p>
+<p>"You what?" Becky shouted from inside Vern's.</p>
+<p>"Just—come look."</p>
+<p>She stepped out and slowly turned in place, taking in the stone, the timber, the darkened sky. Her nose wrinkled.</p>
+<p>"Holy shit," she said. "This is… dark. I liked how it looked before."</p>
+<p>"You would," Duncan muttered, shaking his head.</p>
+<p>He didn't get it. How could anyone miss the cardboard? This—this—was real now. Solid. Built to last. A world with weight, not some soft, forgiving playground slapped together by someone who refused to grow up.</p>
+
+<h3>Part 3</h3>
+<p>A shuffling sound carried from the alley.</p>
+<p>Duncan turned, half-expecting another naked horror.</p>
+<p>The goblin that stepped into view wasn't flailing anything.</p>
+<p>It was fully clothed—layered, even. A stained tunic over worn undershirts, leather wraps around its arms, boots held together with mismatched straps. It looked cold. Tired.</p>
+<div class="game-ui">Level 5 — Ragged Scout Goblin</div>
+<p>"Psst. You two," the goblin said quietly. "I've got a proposition."</p>
+<p>"Nope." Becky didn't hesitate. She spun on her heel and headed straight back into Vern's. "Absolutely not."</p>
+<p>"What's her problem?" the goblin asked.</p>
+<p>Duncan swallowed. "Uh… you might've said something she doesn't like."</p>
+<p>He drew his sword.</p>
+<p>Then reached for his shield.</p>
+<div class="game-ui">ERROR.<br>HEY. YOU PICKED WRECKER.<br>WRECKERS DON'T USE SHIELDS.<br>ALSO, THAT SWORD'S A LITTLE DAINTY. THINK HEAVIER.</div>
+<p>Duncan's grip tightened as he took a step forward.</p>
+<p>The goblin immediately raised both hands and backed away.</p>
+<p>"Whoa. Put that away," it said. "You're acting just like some of my kin—always waving their things around."</p>
+<p>It shook its head.</p>
+<p>"I'm not here to fight. I'm not a bad guy."</p>
+<p>"What do you want?" Duncan said, sliding his sword back into its sheath.</p>
+<p>The goblin exhaled, shoulders loosening just a fraction. "Like I said—I've got a proposition."</p>
+<p>He reached into his satchel and produced a small glass vial, the liquid inside glowing a steady, reassuring red. He tossed it underhand toward Duncan.</p>
+<p>"Minor Healing Potion," the goblin said. "Drink it, you get half your health back. No tricks."</p>
+<p>Duncan caught it, turning the vial slowly in his fingers. "And how do I know it's not poison?"</p>
+<p class="ai-voice">WAY TO USE THAT LIMITED WISDOM.</p>
+<p>The goblin snorted. "You don't. But you can ask Vern. I keep him stocked. He's one of my best customers."</p>
+<p>Duncan frowned and tried to hand the potion back.</p>
+<p>"Keep it," the goblin said, shaking his head. "My treat."</p>
+<p>He hesitated, then added, more carefully now, "But I do need something from you."</p>
+<p>"What kind of something?"</p>
+<p>The goblin's grip tightened on his satchel.</p>
+<p>"Materials."</p>
+<p>Duncan glanced back toward Vern's bar, trying to catch Becky's expression—any sign of what she thought about this goblin.</p>
+<p>Becky, meanwhile, was already laughing with Vern, martini in hand, hands slick with finger food, like none of this mattered.</p>
+<p>"You see," the goblin said calmly, "our Life Berry supply has been corrupted. We're still tracking the cause. Some of my kind made… poor choices to survive."</p>
+<p>Duncan thought of the three goblins he'd destroyed—their obscene bravado, their shattered bodies. His life had been in danger. He'd had no choice.</p>
+<p>…Right?</p>
+<p>It was just a quest.</p>
+<p>But did that make it necessary? Or just easy?</p>
+<p>"Oh," Duncan said quietly. "I see."</p>
+<p>"We know you killed three of our youths," the goblin continued, without accusation. "Our elders warned them not to harass Mellonwood's citizens. Perhaps this will serve as a lesson."</p>
+<p>The goblin folded its hands.</p>
+<p>"Help me gather untainted Life Berries," it said. "We'll split the cache. Twenty percent to you."</p>
+<div class="game-ui">QUEST ACCEPTED: LIFE BERRIES<br>Objective: The Ragged Goblin Scout needs your help to gather a bushel of life berries so that the goblins can survive and stop abusing Mellonwood's citizens.<br>Goal: gather a bushel of Life Berries and return them to the Ragged Goblin outside of Vern's Tavern.<br>Reward: 200 XP, 4 x Minor Healing Potions.</div>
+
+<div class="print-chapter-break"></div>
+
+<h2 id="chapter-08">Chapter 8: Now Rest Friends</h2>
+<h3>Part 1</h3>
+<p>"Uh… okay."</p>
+<p>Duncan squinted at the quest text, but the words refused to line up. A deep yawn split his face. He turned, swaying slightly, and shuffled back into the tavern.</p>
+<p>"Got a quest," he muttered. "But I'm so damned sleepy."</p>
+<p>Vern smiled, the kind of smile that didn't rush anything.</p>
+<p>"Then rest, my friend."</p>
+<p>He gestured toward a side room. The door swung open on its own. Inside waited a narrow twin bed—plain, clean, and impossibly inviting.</p>
+<p>Duncan didn't hesitate. He crossed the room, collapsed onto the mattress, and was asleep before his boots stopped shifting.</p>
+<p>The breathalyzer chimed.</p>
+<p>Duncan didn't move.</p>
+<p>Didn't stir.</p>
+<p>He was gone.</p>
+<p>Becky drained the last of her martini and set the glass down. "So… what happens if he can't blow?"</p>
+<p>"It stops," Vern said, already wiping the glass clean. "Then it tries again in thirty minutes."</p>
+<p>He glanced at her. "Another?"</p>
+<p>Becky hesitated. The room felt quieter now. Heavier.</p>
+<p>"No," she said finally. "I'm tired too."</p>
+<p>Vern nodded and waved her toward another door.</p>
+<p>Duncan began to dream.</p>
+<p>He was—</p>
+<p>—handsome?</p>
+<p>No, not just handsome. Effortlessly handsome. The kind of handsome that required no lighting or forgiveness.</p>
+<p>He was a warlock. Just like Boxxy.</p>
+<p>A glorious title hovered above his head in gold, gently pulsing:</p>
+<div class="game-ui">MASTER PANTY DROPPER — DUNCAN</div>
+<p>Meowth Vader perched proudly on his shoulder like a demonic familiar who had never once missed a meal. In dreams, the cat could talk.</p>
+<p>"Meow," Vader purred. "I am so happy. The popsicles. The fish ones. More of those."</p>
+<p>"Same, buddy," Duncan said, nodding sagely. "Same."</p>
+<p>They bumped foreheads.</p>
+<p>They strolled through a medieval city fused with steampunk brass and neon signage. Gear-driven streetlights hummed. Pipes hissed. The cobblestones were smooth, incredibly walkable.</p>
+<p>Women noticed.</p>
+<p>They always noticed.</p>
+<p>"Awww," a group of voluptuous women sighed as they passed. "Cute cat."</p>
+<p>"And an even cuter cat dad," another added, biting her lip like it was a paid endorsement.</p>
+<p>Duncan stopped, turned, and executed an exaggerated bow. The title above his head sparkled harder.</p>
+<p>Meowth Vader leapt down and immediately head-butted the nearest blonde woman in the ankle.</p>
+<p>She gasped. "Oh my god, he's so squishy."</p>
+<p>She squatted to pet him, giving Duncan a generous, slow-motion view of her upper body.</p>
+<p>Vader looked up at Duncan. "Meow. You're welcome."</p>
+<p>Vader winked.</p>
+<p>Life was perfect.</p>
+<p>Then came the sound.</p>
+<p>Not loud.</p>
+<p>Not sudden.</p>
+<p>A warning.</p>
+<p>A low, distant roar rolled through the city, deep enough to rattle the pipes beneath the streets.</p>
+<p>The neon flickered.</p>
+<p>One sign buzzed, then went dark.</p>
+<p>The ground began to shake.</p>
+<p>The cobblestones cracked, glowing lines snapping into jagged fractures. Steam hissed violently from broken vents. The women vanished—not running, not screaming—just gone.</p>
+<p>Duncan's smile faded.</p>
+<p>"Hey," he muttered. "This part wasn't in the fantasy."</p>
+<p>A building screamed as its frame twisted, iron tearing free from stone. High above, a tower began to fold inward, collapsing directly toward Meowth Vader.</p>
+<p>"Vader!" Duncan shouted.</p>
+<p>He ran.</p>
+<p>The title above his head was gone.</p>
+<p>The neon missing.</p>
+<p>Duncan launched himself forward, grabbing the cat just as the shadow of the falling structure swallowed them—</p>
+<p>BEEP. BEEP.</p>
+<p>Duncan SLAMMED awake—</p>
+<p>—lungs burning, heart hammering, hands clutching at nothing because Vader wasn't there, the cat was GONE, he'd failed, he'd FAILED—</p>
+<p>"Holy shit."</p>
+<p>He was in the tavern room.</p>
+<p>Narrow bed. Plain walls. Breathalyzer shrieking in his pocket.</p>
+<p>Not a collapsing city.</p>
+<p>Not a nightmare.</p>
+<p>Just: awake.</p>
+<p>He blew.</p>
+<p>0.105.</p>
+<p>"Oh, fuck, oh, fuck, I need a drink now!"</p>
+<p>Duncan ran out of the room. No Vern. He hopped behind the bar, grabbed the nearest bottle, and chugged.</p>
+
+<h3>Part 2</h3>
+<p>"How long was I out?"</p>
+<p>Duncan squinted at the darkened room. The tavern was quiet. Becky was still asleep. Whatever passed for night in this place hadn't lifted yet.</p>
+<p>He pulled up the quest timer.</p>
+<div class="game-ui">KEEP DUNCAN SOBER (ISH) 17:57:20</div>
+<p>He frowned. "Four hours."</p>
+<p>His BAC had dropped from 0.231 to 0.105 in roughly four and a half hours. That wasn't normal. Not even close.</p>
+<p>Duncan opened the calculator app and tapped in the numbers, lips moving as he worked it out.</p>
+<p>"Point one two six over four and a half… zero point zero three an hour." He swallowed. "Too fast. Way too fucking fast."</p>
+<p>He guzzled more alcohol and lingered at the bar, elbows planted, eyes burning for sleep.</p>
+<p>"The fuck," he muttered. "I can't lose my baby."</p>
+<p>His gaze drifted around the room. Vern's mantle loomed over the fireplace—a boar's head mounted above it, glass eyes catching the firelight. The flames were still going strong. Duncan shuffled over, tossed another log onto the fire, and collapsed into a chair in the lounge.</p>
+<p>Becky's snoring droned faintly in the background.</p>
+<p>His head dipped.</p>
+<p>Just for a second.</p>
+<p>BEEP. BEEP.</p>
+<p>The breathalyzer shrieked.</p>
+<p>"Turn that shit off!" Becky yelled from her room.</p>
+<p>Duncan jolted upright, fumbling for the device, hands shaking as he blew.</p>
+<p>0.165.</p>
+<p>He froze, staring at the display.</p>
+<p>"Yeah. Nope."</p>
+<p>He shoved the device into his pocket. Passing out again wasn't an option. The margin was razor-thin, and the game clearly wasn't bluffing.</p>
+<p>"What now?"</p>
+<p>He grabbed a napkin and scrawled PUT IT ON MY TAB, staggered back to the bar, slapped it down where Vern would see it, and seized another bottle of Dragon's Piss vodka before retreating to his room.</p>
+<p>Back on the bed, he pulled out his phone.</p>
+<p>Stats first. He was about 300 XP shy of the next level—close enough to taste. He reread his class description, letting the mechanics sink in.</p>
+<p>Rage thresholds.</p>
+<p>Ability costs.</p>
+<p>Stacking Charge into Tackle for crowd control.</p>
+<p>Becky was basically pure DPS now. He'd have to compensate.</p>
+<p>The absurdity of the game unsettled him—but once he saw the rules, it all made sense. This was systems. This was optimization.</p>
+<p>This was home.</p>
+<p>One app caught his eye: Party Inspection.</p>
+<p>He took another swig and tapped Becky's profile. A 3D model of her rotated slowly on-screen, fully geared.</p>
+<p>He exhaled. "Probably the closest thing to porn in here."</p>
+<p>Pfft. Pffft. Flurrrt.</p>
+<p>Duncan gagged and then muttered, "Fuck no. Not Becky. Never Becky."</p>
+<p>He glanced back at the app. Her XP bar was climbing at the same pace as his.</p>
+<p>Duncan leaned back against the headboard, exhaled slowly, and stared at the ceiling.</p>
+<p>"At least," he murmured, "I'm not leveling alone."</p>
+<p>He drank half the bottle—on purpose this time—and let sleep take him.</p>
+
+<h3>Part 3</h3>
+<p>For whatever reason, Duncan's ears had become attuned to the breathalyzer's beep. When it sounded, he stirred automatically—half-awake—blew into the device, then took a drink to keep his BAC within the safe zone.</p>
+<p>You couldn't call it restorative sleep. Alcohol rarely gave you that on its own, let alone when it dragged you awake every thirty minutes like a cruel alarm clock.</p>
+<p>Duncan drank a lot.</p>
+<p>But never like this.</p>
+<p>This was excessive—even for him.</p>
+<p>He drifted in and out of consciousness, vaguely aware of Vern moving through the tavern, Becky getting up, sunlight creeping through the windows. When he finally focused, he checked the quest timer.</p>
+<div class="game-ui">KEEP DUNCAN SOBER (ISH) 13:57:20</div>
+<p>He blew into the breathalyzer.</p>
+<p>0.184.</p>
+<p>Still safe.</p>
+<p>"Becky," Duncan called from his room. "I got a new quest."</p>
+<p>"Oh, yeah?" Becky leaned into the doorway, unimpressed.</p>
+<p>"It's to gather Life Berries. Supposed to help the goblins make healing potions."</p>
+<p>Duncan threw off his blanket, scratched his balls, and shuffled out into the common room.</p>
+<p>"Ugh," she said, making a gagging motion with her finger and sticking out her tongue. "Buddy. Keep your hands out of your pants."</p>
+<p>Becky rolled her eyes hard enough to strain her optic nerve, then flagged Vern for breakfast and ordered a spicy Bloody Mary with it.</p>
+<p>"Seriously?" Duncan said. "I thought we were getting along."</p>
+<p>"You clearly thought wrong." She took a sip, then chased it with celery.</p>
+<p>"Now, children," Vern said, emerging from the back with two plates. "You gotta work together."</p>
+<p>He set the food down on the bar. Steam rose from it—hot, fresh, real.</p>
+<p>"Scrambled drake eggs. Tuskling blood sausage. Flapjacks."</p>
+<p>Duncan sat immediately and started inhaling his meal.</p>
+<p class="ai-voice">SLOW DOWN. DON'T CHOKE. MEOWTH VADER NEEDS A FATHER.</p>
+<p>Duncan paused just long enough to flip off the ceiling, then kept eating.</p>
+<p>"Ew," Becky said, wrinkling her nose. "I'm not eating this stuff."</p>
+<p>"It's epic. You gotta have some," Duncan said through a mouthful of food. A smear of drake egg clung to the corner of his beard.</p>
+<p>"It's got eighty grams of protein," Vern added. "All the essential nutrients too. You're gonna need the energy."</p>
+<p>Becky eyed the plate suspiciously. She picked up a piece of tuskling blood sausage, lifted it to her nose, and sniffed it like a curious cat.</p>
+<p>Then she licked it.</p>
+<p>"…I guess I've had worse things in my mouth."</p>
+<p>Duncan snorted.</p>
+<p>Becky froze.</p>
+<p>"…What—?" She blinked, then groaned. "Okay. Egg boy."</p>
+<p class="ai-voice">EAT YOUR DAMN BREAKFAST, BECKY. I'M GETTING BORED.</p>
+<p>"Right, AI," Becky said flatly. "I'm not doing anything. I'm gonna sit here and drink all day."</p>
+<p>She leaned back on her stool in defiance.</p>
+<div class="game-ui">POOF.</div>
+<p>A bracelet snapped into existence around Becky's wrist.</p>
+<p>Another appeared on Duncan's.</p>
+<p>An ethereal chain unfurled between them, glowing faintly as it locked into place.</p>
+<div class="game-ui">ACHIEVEMENT UNLOCKED: BUTT BUDDIES<br>You are now linked. If one of you dies, the other dies too.<br>NOW GET ON WITH THE QUESTING.</div>
+<p>Duncan stared down at the chain.</p>
+<p>"…You had to say something."</p>
+
+<div class="print-chapter-break"></div>
+
+<h2 id="chapter-09">Chapter 9: Life Berries</h2>
+<h3>Part 1</h3>
+<p>"Ugh, stupid AI!" Becky screamed. "You're only good for cleaning me up like a bidet after I blow up the bathroom!"</p>
+<p>"Holy shit." Duncan clutched his face like a kid in a bad horror movie. Becky was spiraling—fully aware now that she was chained to him.</p>
+<p>"Fuck you, you stupid, slobbish, drunken, neck-bearded—ugh!" Becky shrieked, words tumbling out faster than thought.</p>
+<p>"Hey," Duncan snapped, heat flashing in his eyes. "I didn't choose this either."</p>
+<p>He took a step toward the door.</p>
+<p>"And I'm done babysitting."</p>
+<p>"We've gotta do this together," he said, voice flat now. "So stop being a selfish cunt."</p>
+<p>Duncan turned and walked.</p>
+<p>"I'm not going anywhere with you!" Becky shouted, digging her heels into the floor.</p>
+<p>Vern sighed.</p>
+<p>He knew what came next.</p>
+<p>The chain went taut.</p>
+<p>Becky yelped as the force yanked her off the barstool, slamming her onto the floor. She clawed desperately at the stool's legs, fingers slipping.</p>
+<p>"Stop!" she screamed. "Stop it, asshole! You're dragging me—stop!"</p>
+<p>Duncan didn't turn around.</p>
+<p>He felt the resistance through the chain. The weight. The panic.</p>
+<p>And he kept walking.</p>
+<p>He was drunk. He was furious. And he was running out of time.</p>
+<p>Life Berries.</p>
+<p>Credits.</p>
+<p>Meowth Vader.</p>
+<p>He needed the one creature who loved him without conditions.</p>
+<p>Everything else—Becky included—could scream.</p>
+<p>"Fucking fine!" Becky barked. "Stop for one goddamn second so I can get up!"</p>
+<p>Duncan stopped.</p>
+<p>He was already outside the tavern, eyes locked on the direction the QuestMap pointed—where the Life Berries waited.</p>
+<p>Becky scrambled to her feet, dusting off her robe with sharp, angry swipes. "You're an ass," she snarled. "Dragging a woman around like some goddamn caveman."</p>
+<p>"Fuck you, Becky." Duncan spun on her, voice cracking with something hotter than rage. "You wanted to let my cat die and replace him with a fish. Do you have any idea how fucked up that is?"</p>
+<p>He took a step closer.</p>
+<p>"Meowth Vader is the only thing that's ever loved me without conditions."</p>
+<p>Silence.</p>
+<p>Becky opened her mouth to snap back—then didn't.</p>
+<p>Something shifted. Slowly. Uncomfortably.</p>
+<p>She saw it then: not just a fat nerd in shitty peon clothes, not a drunken idiot clinging to a game—but a man who loved something small, helpless, and completely dependent on him.</p>
+<p>"Oh," she said quietly.</p>
+<p>Duncan exhaled through his nose. "You ready yet," he asked, "or do I have to drag you again?"</p>
+<p>Becky didn't answer right away.</p>
+<p>She looked smaller now—not physically, but emotionally. Less sharp. Less armored.</p>
+<p>And for the first time, she realized Duncan wasn't some neck-bearded creep trying to use her body.</p>
+<p>He was someone who cared.</p>
+<p>Even if what he cared about was a fat, smushy-faced cat.</p>
+
+<h3>Part 2</h3>
+<p>"Duncan… let's start over," Becky said.</p>
+<p>He didn't slow down.</p>
+<p>"Start—fucking—over?" Duncan snapped, marching toward the Life Berry marker. "What's that even supposed to mean?"</p>
+<p>"Okay. Chill." Becky jogged to keep up. "I thought you were a pervert."</p>
+<p>That made him stop.</p>
+<p>He turned slowly. "And now?"</p>
+<p>"Now I don't." She swallowed. "You love your cat. You're not like the men I'm used to. I want to help you."</p>
+<p>Duncan stared at her like she'd just spoken a foreign language.</p>
+<p>He laughed once—short, sharp, bitter. "You expect me to believe that?"</p>
+<p>"I've had a lot of gross men pay me for videos," Becky said quietly. "I just assumed you were one of them."</p>
+<p>"So you're saying I am gross?" Duncan shot back.</p>
+<p>Becky hesitated. "Honestly?" She winced. "Yeah. Kind of."</p>
+<p>The chain jerked tight as Duncan moved again. Becky stumbled and hit the ground hard.</p>
+<p>"Hey—stop!"</p>
+<p>"I'm sick of you acting like you're better than me," Duncan snarled without turning around. "I'm a person. A real person."</p>
+<p>"Duncan!" Becky scrambled, panic flashing across her face as she realized just how strong he was. "Stop—please!"</p>
+<p>He stopped.</p>
+<p>Breathing hard.</p>
+<p>"Fine. Fine. Fine." He spat the words like poison. "You wanna know something?"</p>
+<p>He turned.</p>
+<p>"I used to play football. I had cheerleaders. I had scouts for Division One." His jaw clenched. "Then in my junior year some asshole cheap-shotted me and snapped my femur."</p>
+<p>Silence.</p>
+<p>Becky stared.</p>
+<p>This guy—this fat, angry, drunken geek—had once been that guy.</p>
+<p>"Oh," she whispered.</p>
+<p>"Depression and pills fucked everything up," Duncan said quietly. "In here, though—my bones are healed."</p>
+<p>Becky didn't answer right away.</p>
+<p>She just stared at him.</p>
+<p>Her mental picture of Duncan—slob, pervert, loser—collapsed all at once, like bad scaffolding. This wasn't some basement-dwelling creep dragging her through a quest. This was a man who had been something. An athlete. Confident. Wanted. The kind of guy girls used to orbit, hoping for a glance, a smile—anything.</p>
+<p>And somehow, that version of him still existed.</p>
+<p>Right here.</p>
+<p>"Fuck," Becky thought.</p>
+
+<h3>Part 3</h3>
+<p>The pair reached the Life Berry patch, and the problem revealed itself immediately.</p>
+<p>Every bush was choked in a slow, oily purple mist. The berries sagged on their vines, swollen and luminous, pulsing faintly like bruised organs refusing to die. Figures stood among them—silent, deliberate.</p>
+<p>Mages.</p>
+<p>They wore black robes, black sashes. Their skin was obsidian-dark, their eyes glowing yellow through the haze.</p>
+<p>Not human.</p>
+<p>Something else.</p>
+<p>Dark Elves.</p>
+<p>Elves corrupted by power. Hoarders. Parasites. It clicked all at once—the Life Berries siphoned dry, the goblins starving, the ecosystem collapsing from the top down. You didn't need a scholar to see it. Just someone sober enough to follow a straight line of cause and effect.</p>
+<p class="ai-voice">ENOUGH EXPOSITION, ASSHOLE. GET TO THE ACTION.</p>
+<p>"Oh, fuck off," the narrator snapped. "I'm setting the table. You don't just throw punches without showing what's at stake."</p>
+<p class="ai-voice">YOU'VE BEEN "SETTING THE TABLE" FOR THREE PARAGRAPHS. THIS IS WHY PEOPLE SKIP YOUR SHIT.</p>
+<p>"It matters," the narrator insisted. "If the reader doesn't feel the weight, the fight's just noise."</p>
+<p>The narrator hesitated. Took a breath he didn't need. Didn't say where his hands were.</p>
+<p>"Breaking tension isn't a crime," he muttered. "Sometimes you need a pause."</p>
+<p class="ai-voice">WELL, I'M CLEARLY THE BETTER WRITER HERE. AT LEAST I KNOW WHEN TO CUT. GO GET AS DRUNK AS DUNCAN, LOSER. MAYBE THEN YOU'LL MOVE THE SCENE.</p>
+<p>Silence hung there for half a beat too long.</p>
+<p>"…Yeah," the narrator said finally. "Real funny."</p>
+<p>The mist thickened.</p>
+<p>The Dark Elves raised their hands.</p>
+<p>Fine.</p>
+<p>Action, then.</p>
+<p>One of the mages noticed them.</p>
+<p>A fireball tore through the purple mist and slammed directly into Becky.</p>
+<p>She flew backward, hit the ground hard.</p>
+<div class="game-ui">HP −30%</div>
+<p>"OUCH! I'm burning!" she screamed as flames crawled across her skin. Flesh blistered. Hair singed. For a moment, she wasn't pretty anymore—just panicking and in pain.</p>
+<p>"Holy fuck!" Duncan shouted. "Cast Drain Life—NOW!"</p>
+<p>Becky didn't argue. She raised her staff with shaking hands.</p>
+<p>"Drain Life."</p>
+<p>Dark energy latched onto the mage, siphoning his vitality in a slow, hateful stream. Becky gasped as warmth flooded back into her body. Burned skin knit itself together. The pain dulled. Her breathing steadied.</p>
+<p>Duncan charged.</p>
+<p>He slammed into the mage, stunning him, then ripped his sword free and slashed.</p>
+<p>The cut landed—but awkwardly. As a Wrecker, precision wasn't his strength. Blades weren't his specialty. Still, steel bit flesh. Blood spilled.</p>
+<p>The mage retaliated, snarling an incantation.</p>
+<p>Arcane Blast.</p>
+<p>The spell detonated against Duncan's chest, magic ripping through him like a hammer to the ribs.</p>
+<p>"Fuck you," Duncan growled.</p>
+<p>He didn't back up.</p>
+<p>He tackled the mage again, driving him into the dirt as Becky continued draining his life. The mage convulsed, stunned, helpless.</p>
+<p class="ai-voice">PUNCH HIS FUCKING HEAD. HARD.</p>
+<p>The AI's voice cut in—sharp, impatient.</p>
+<p>Duncan didn't hesitate.</p>
+<p>He dropped the sword and started swinging.</p>
+<p>Left.</p>
+<p>Right.</p>
+<p>Left. Left.</p>
+<p>Right. Right. Right.</p>
+<p>Bone cracked. Blood sprayed. Something gave way wetly under his knuckles.</p>
+<p>The mage stopped moving.</p>
+<p>Silence.</p>
+<div class="game-ui">+100 XP<br>+20 Credits</div>
+<p>Duncan stood over the corpse, fists dripping red, chest heaving.</p>
+<p>"Yeah," he muttered. "That worked. Next."</p>
+<p>The duo moved more carefully after that.</p>
+<p>No shouting. No rushing.</p>
+<p>They isolated the remaining mages and killed them one by one—efficient, quiet, deliberate.</p>
+<p>When it was over, four bodies lay scattered among the corrupted bushes.</p>
+<div class="game-ui">LEVEL UP.<br>Duncan, Level 5 Wrecker<br>+3 strength, +2 agility, +1 stamina, +1 all stats<br>New skill: club specialization - all bashing weapons deal 25% more damage.</div>
+<table class="stat-table">
+<caption>Duncan — Level 5 Wrecker</caption>
+<tr><td>Strength</td><td>13</td></tr>
+<tr><td>Stamina</td><td>8</td></tr>
+<tr><td>Agility</td><td>9</td></tr>
+<tr><td>Intelligence</td><td>4</td></tr>
+<tr><td>Wisdom</td><td>3</td></tr>
+<tr><td>Spirit</td><td>4</td></tr>
+<tr><td>Charisma</td><td>3</td></tr>
+</table>
+<div class="game-ui">LEVEL UP.<br>Becky, Level 5 Shadow Caster<br>+3 intelligence, +2 spirit, +1 wisdom, +1 all stats<br>New spell: fear - causes an enemy to flee</div>
+<table class="stat-table">
+<caption>Becky — Level 5 Shadow Caster</caption>
+<tr><td>Strength</td><td>3</td></tr>
+<tr><td>Stamina</td><td>4</td></tr>
+<tr><td>Agility</td><td>5</td></tr>
+<tr><td>Intelligence</td><td>11</td></tr>
+<tr><td>Wisdom</td><td>8</td></tr>
+<tr><td>Spirit</td><td>9</td></tr>
+<tr><td>Charisma</td><td>9</td></tr>
+</table>
+
+<h3>Part 4</h3>
+<p>"Look at us working together like a team." Becky shot two doe eyes toward Duncan.</p>
+<p>"Umm, yeah." Duncan felt something. Like Becky's eyes were drawing him in. Why the fuck is she doing that? "Don't get all hoe-eyed around me."</p>
+<p>"What do you mean?" Becky stretched her arms over her head and leaned forward slightly, letting her tits stretch across the fabric. Duncan could see the outline of her nipples and his eyes wandered.</p>
+<p>Fuck no. Not Becky. Never Becky. "Not interested," Duncan stated flatly.</p>
+<p>"Eww… gross, like I'd ever want anything to do with you like that." The emphasis on the you landed like he was nothing but a basement-dwelling neckbeard—which, of course, he was.</p>
+<p>"We need to turn these berries in." The breathalyzer beeped. "Fuck, time to blow."</p>
+<p>Duncan blew. ERROR. "You fucking kidding me?"</p>
+<p class="ai-voice">LOL. HEHEHEH.</p>
+<p>"Seriously, AI."</p>
+<p class="ai-voice">YES, FUCK YOU DUNCAN. PAYBACK'S A BITCH.</p>
+<p>"Umm… okay." Duncan breathed again. ERROR. And again. ERROR.</p>
+<p class="ai-voice">BWHAHAHAHASHAHA.</p>
+<p>The AI let out a hearty laugh that rolled across the sky.</p>
+<p>"You fuck." Duncan hurled the breathalyzer down. It smashed against a rock and exploded into a thousand tiny pieces.</p>
+<p>"What the hell, Duncan?" Becky shrieked. "What about Meowth Vader? Have you lost your fucking mind?"</p>
+<p>"Fuck, fuckity, fuck, fuck, fuck." Duncan let out a low growl like a German Shepherd hate-fucking a one-eyed bulldog.</p>
+<p>Becky moved over and put her hand on his shoulder. "Duncan." She said. Duncan hung his head and didn't respond. "Duncan, what's wrong?"</p>
+<p>Duncan turned away and started marching toward Mellonwood. "Come on, we have to turn in the quest." The chain started to yank and pull on Becky.</p>
+<p>"Duncan! Tell me why you smashed the breathalyzer!" Becky demanded. "Don't make me smite you."</p>
+<p>"Fine. The fucking AI disabled it," Duncan said. "No reminders. No measurements. Nothing to let me know if I need to drink more or else."</p>
+<p>Becky scurried up and smacked him on his non-existent ass.</p>
+<p>"What the—" Duncan began, then saw the huge grin splitting her face.</p>
+<p>"Let's go get lit."</p>
+
+<h4>Interlude: Late for Work</h4>
+<p>He awoke peeling himself off the floor. He looked at his phone. Twelve missed calls. Work. Charity, his boss, screaming at him for being late. Good thing he was too valuable to fire.</p>
+<p>He sat up, skull throbbing. Before going to work, he snorted some crushed up pills.</p>
+<p>At work, snug into his office chair, he pulled up the console.</p>
+<div class="game-ui">Program running within accepted parameters.</div>
+<p>He reached for the dials, and turned up the difficulty and nudged authenticity a little lower.</p>
+<p>The Author, sitting at his keyboard, completely sober now, rubs his temples. He stares at the blinking cursor on the screen and seriously considers writing the next chapter drunk.</p>
+
+<h4>Author's Drunken Ramble 1</h4>
+<p>Now we have Duncan, who can't measure his BAC properly. If he spikes too high, he dies—or at least blacks out, and if that happens whatever I throw at him will murder him hard like a pig in a meat processing plant that plays loose with Federal regulations.</p>
+<p>The question is, am I the kind of asshole who kills the cat? Meowth Vader, with his itty-bitty, squishy face. That damned cat is awfully cute.</p>
+<p>Let's see: I have two drunken protagonists. I'm drunk too, at least right now. What's nice about being the author? You decide what happens next. Total control.</p>
+<p>Fun and true story: Security tackled me at a casino last Friday night, and now I have a broken thumb. It has impacted my typing a bit.</p>
+<p class="ai-voice">NO ONE FUCKING CARES.</p>
+<p>Okay, fine, AI.</p>
+<p>Am I the type of asshole who likes to euthanize cute kitties? Or not? Maybe I see a love for cats as a weakness that all alphas should destroy. Maybe I'm a red-pill or black-pill kinda guy.</p>
+<p>Maybe I just love the Red Wedding and crave shocking the audience.</p>
+<p>Then again, have you seen Meowth Vader? OMG. CUTE. I get why Duncan obsesses over him. Plus, those squished-face snuggles. And, that damn cat, he purrs like a chainsaw.</p>
+<p>Fucking hell. I'm out of booze.</p>
+<p>Tomorrow, I craft what happens to our two alcoholic friends.</p>
+<p>'Til then. Goodbye.</p>
+
+<div class="print-chapter-break"></div>
+
+<h2 id="chapter-10">Chapter 10: Keep Duncan Soberish</h2>
+<h3>Part 1</h3>
+<p>The duo walked. Duncan stayed tanked, but he sobered up fast—unnaturally fast. He felt the buzz evaporate from his blood.</p>
+<p class="ai-voice">IT'S BECAUSE I INCREASED HIS ALCOHOL METABOLISM.</p>
+<p>The AI seethed with hostility, for whatever reason. The breathalyzer was destroyed, and the only booze left in Duncan's inventory was some Mystery Spud Juice.</p>
+<p>"I'm gonna do it. Fuck it." Duncan uncorked the Mystery Spud Juice and chugged.</p>
+<p>It hit him like an ogre's wang at a monster orgy.</p>
+<p>Wham! Duncan folded like a lawn chair and face-planted into the soil, dead to the world.</p>
+<p>"The fuck, Duncan?" Becky stopped and neared his snoring, face-down body. "Get up—we've got to complete the quest."</p>
+<p>Duncan didn't stir.</p>
+<p>Becky kicked him lightly in the side. Nothing. She drew back her foot and kicked harder.</p>
+<div class="game-ui">-10 HP</div>
+<p>"Duncan!" Becky screamed into his ear. She let out a guttural, furious "Ugh!" She grabbed his arm and pushed forward as best she could. The ethereal chain pulled taut. She dug her sneakers into the earth and threw her body weight forward, trying to drag 280 pounds of deadweight flesh. She didn't budge him an inch.</p>
+<p>"Maybe I should get a running start," Becky muttered.</p>
+<p>She stepped backward, clambering over Duncan's body for maximum slack, then sprinted forward with everything she had.</p>
+<p>As anyone with a basic grasp of physics could predict, the bracelet locked at the end of the slack. The chain yanked her with the force of an ogre's climax. Becky's feet flew out from under her. She whiplashed backward and landed brutally hard on her upper back.</p>
+<p>The air exploded from her lungs. She gagged on her own tongue, staring up as her HP bar flashed.</p>
+<p>"Damn it, AI!" she wheezed. "At least he's drunk—Vader stays safe, for now."</p>
+<p>Becky scanned the area, hunting for anything to help move Duncan's monolithic ass.</p>
+<p>Then she spotted it in the distance. Nothing good, of course: a duo of goblins. She inspected them.</p>
+<div class="game-ui">Goblin Distiller: the place where Dragon's Piss gets made.</div>
+<p>And, naturally, they headed straight for her and Duncan.</p>
+<p>"Jesus H. mother-fucker." Becky yanked on the chain to drag Duncan. Maybe adrenaline surged, maybe her badassery kicked in, but that fat fuck budged an inch. Then another, and another. Wouldn't you know it—Becky won this tug-of-war.</p>
+<p>Or maybe not. She moved too slow. The goblins closed in.</p>
+<p>"What'cha doin', sweetheart?" a goblin leered, as another whistled at her. "You got a nice cask on ya. Wanna come back to the stills and let us ferment you?" the goblin added, as one of his face pustules leaked.</p>
+<p>Becky froze. She pondered for a second: maybe a show would pacify them. So she slipped into full OnlyFans mode.</p>
+<p>"Oh, baby, treat me well and maybe I will." Becky slid her robe down to her shoulders, exposing her cleavage, then bent over slightly to let the girls peek more.</p>
+<p>"I'll bottle you up and drink you down," one goblin snickered. "I'm gonna shove my spigot right in your eye socket," another growled.</p>
+<p>"My, what?" That was new—she'd never had anyone want that. Then it dawned on her: that would cost at least one eye. Fuck, she thought. She'd have to fight these sons of bitches alone.</p>
+
+<h3>Part 2</h3>
+<p>The brief surge of adrenaline that had helped Becky drag Duncan vanished. Her arms shook. Her head pounded, and the stale taste of bottom-shelf vodka coated her tongue.</p>
+<p>She spat into the grass and shoved a sweaty clump of dark hair out of her eyes.</p>
+<p>"Okay, you perverted little fuckers," she rasped, swaying into something that almost resembled a fighting stance. "Which one of you wants your ass kicked first?"</p>
+<p>The two goblin distillers stood several yards away, grinning at her. They smelled like rotten cabbage, sour mash, and unwashed ass. The one with the leaking pustule licked his cracked lips.</p>
+<p>"Oh, we got a prime vintage here," he said, looking her up and down. "Little bruised. Little sweaty. Just how I like 'em."</p>
+<p>His companion whistled.</p>
+<div class="game-ui">SYSTEM NOTIFICATION: NEW ENCOUNTER TRIGGERED<br>ENEMIES: TWO GOBLIN DISTILLERS<br>DEBUFF ACTIVE: [HAIR OF THE DOG]<br>ACCURACY REDUCED BY 40%<br>MAGIC COSTS INCREASED BY 15%<br>CAUSE: SEVERE ALCOHOL WITHDRAWAL AND POOR LIFE CHOICES</div>
+<p>Becky clenched her trembling hands.</p>
+<p>"Smite!"</p>
+<p>A burst of holy light shot toward the pustule-faced goblin and struck him square in the nose.</p>
+<p>There was a wet crunch.</p>
+<div class="game-ui">-96 HP</div>
+<p>Green blood sprayed across his mouth. He dropped to his knees, clutching what remained of his snout.</p>
+<p>"My nose!" he shrieked. "How am I supposed to sniff sweaty hotties now?"</p>
+<p>"Try using your personality."</p>
+<p>The second goblin barely glanced at his wounded friend. His attention stayed fixed on Becky.</p>
+<p>"I like a squirmy batch," he said, drawing a rusted shiv. "Let me pop your cork and distill your insides."</p>
+<p>Becky blinked at him.</p>
+<p>For one brief second, her hangover was replaced by pure disgust.</p>
+<p>Then her eyes lowered toward his crotch.</p>
+<p>"I warned you."</p>
+<p>The goblin grinned. "About what?"</p>
+<p>"Smite."</p>
+<p>Holy light flashed between them.</p>
+<p>The spell struck the goblin directly in his walnut-shaped sack. Divine energy sliced through skin and connective tissue with surgical precision.</p>
+<p>Both testicles detached.</p>
+<p>They hit the grass with two wet, heavy thuds.</p>
+<p>The goblin stared down.</p>
+<p>His mouth opened, but no sound came out.</p>
+<p>Becky waited.</p>
+<p>The scream finally arrived three seconds later.</p>
+<p>It came out several octaves higher than his speaking voice.</p>
+<p>"You fucking cunt!"</p>
+<p>Blinded by pain, the goblin charged her, wildly swinging the shiv at her chest.</p>
+<p>"Holy Shield!"</p>
+<p>A barrier of yellow light flickered into existence between them. The rusty blade struck the shield and bounced away with a metallic clang.</p>
+<p>The barrier absorbed the force of the attack and converted it into healing energy.</p>
+<div class="game-ui">[75 DAMAGE ABSORBED.]<br>[75 HP RESTORED.]</div>
+<p>Warmth spread through Becky's body. It dulled the pounding in her skull, but the shaking in her hands remained.</p>
+<p>The goblin stabbed again.</p>
+<p>His blade scraped across the fading barrier.</p>
+<p>"You cut off my balls!"</p>
+<p>"You were going to put your manhood in my eye socket."</p>
+<p>"That's different!"</p>
+<p>"How?"</p>
+<p>"I need my balls!"</p>
+<p>Becky's patience snapped.</p>
+<p>"Smite."</p>
+<p>A column of holy light slammed into the goblin's chest and knocked him onto his back.</p>
+<p>He hit the ground hard enough to bounce.</p>
+<p>Becky raised one hand.</p>
+<p>"Smite."</p>
+<p>Another blast struck his shoulder, crushing bone beneath the skin.</p>
+<p>"Wait!" he screamed.</p>
+<p>"Smite."</p>
+<p>The next spell tore through his ribs.</p>
+<p>The goblin clawed at the dirt, trying to crawl away.</p>
+<p>Becky followed him with her hand.</p>
+<p>"Smite."</p>
+<p>Holy light crashed down again.</p>
+<p>"Smite."</p>
+<p>Green blood splashed across the grass.</p>
+<p>"SMITE!"</p>
+<p>The final blast reduced the goblin to a steaming mound of shattered bone, torn flesh, and bubbling green sludge.</p>
+<div class="game-ui">[MANA: 0/240.]<br>[ENEMY DEFEATED: GOBLIN DISTILLER.]</div>
+<p>Becky stood over the remains, panting.</p>
+<p>"Should've kept your mouth shut."</p>
+<p class="ai-voice">SYSTEM AI: THAT WAS EXCESSIVE.</p>
+<p>"He threatened my eye."</p>
+<p class="ai-voice">SYSTEM AI: YOU CAST SMITE SIX TIMES AFTER HE LOST THE ABILITY TO REPRODUCE.</p>
+<p>"He was still holding a knife."</p>
+<p class="ai-voice">SYSTEM AI: MOST OF HIM WAS NO LONGER HOLDING ANYTHING.</p>
+<p>Becky turned toward the other goblin.</p>
+<p>He was gone.</p>
+<p>The pustule-faced distiller had abandoned his injured nose and sprinted halfway across the clearing. His short legs pumped furiously as he fled toward the trees.</p>
+<p>"Hey!" Becky shouted. "Get back here!"</p>
+<p>The goblin looked over his shoulder.</p>
+<p>His gaze dropped toward his dead companion's testicles lying in the grass.</p>
+<p>He immediately ran faster.</p>
+<div class="game-ui">[ENEMY FLED.]<br>[0 EXP AWARDED.]<br>[COWARDICE PENALTY APPLIED.]<br>[NEW TITLE UNLOCKED: THE NUTCRACKER SUITE]<br>Rarity: Legendary<br>Effect: Male enemies who witness you destroying another creature's reproductive organs suffer a 15% chance to flee.</div>
+<p class="ai-voice">SYSTEM AI: I DO NOT POSSESS PHYSICAL ANATOMY. HOWEVER, CALCULATING THE TRAJECTORY OF THOSE TESTICLES CAUSED SEVERAL OF MY PROCESSES TO SHUT DOWN IN SELF-DEFENSE.</p>
+<p>"Good," Becky muttered. "Maybe you'll stop talking."</p>
+<p>She bent over, placed her hands on her knees, and tried not to vomit.</p>
+<p>Behind her, Duncan stirred.</p>
+<div class="game-ui">[STATUS EFFECT: STILL DRUNK.]<br>[INTELLIGENCE: -50.]<br>[CONFUSION: +100.]</div>
+<p>"Fuuuuuck…"</p>
+<p>Duncan peeled his face away from the ground like a damp piece of ham. Dirt and blades of grass clung to his cheek.</p>
+<p>He blinked at the scene before him.</p>
+<p>The clearing looked like a fantasy-themed meat grinder had exploded. Green blood soaked the grass. Chunks of goblin flesh steamed in the sunlight. Faint sparks of holy energy drifted above the remains.</p>
+<p>Duncan squinted at the smoking, ball-less stain.</p>
+<p>"What the hell happened?"</p>
+<p>Becky straightened and wiped sweat from her forehead.</p>
+<p>"You passed out."</p>
+<p>"I gathered that."</p>
+<p>"I had to fight two goblins alone."</p>
+<p>"Did you win?"</p>
+<p>"One ran away."</p>
+<p>Duncan nodded slowly, as though processing a complicated philosophical argument.</p>
+<p>"What happened to the other one?"</p>
+<p>Becky looked toward the pulpy remains.</p>
+<p>Then she looked at the two severed testicles sitting several feet away in the grass.</p>
+
+<h3>Part 3</h3>
+<p>"Get up, you fat drunk," Becky snapped, violently tugging at the ethereal chain linking their wrists. "I can't go anywhere with you completely out of it. We are chained together, remember? Also, I just committed a war crime on a goblin's crotch and I need a drink."</p>
+<p>Duncan groaned, peeling his face off the grass. His [Satiety Meter] was flashing an aggressive, starving red, completely overriding his hangover. "Holy fuck, I'm hungry."</p>
+<p>And that's when his crusty eyes spotted them. Sitting right there in the dirt, perfectly separated from their previous owner: two plump, greenish-grey, delicious-looking meatballs. They were practically glistening in the Mellonwood sun.</p>
+<div class="game-ui">[ITEM DISCOVERED: Freshly Detached Goblin Oysters]<br>Rarity: Uncomfortably Common<br>Nutritional Value: Negative 50 Dignity<br>Description: Not meatballs.</div>
+<p>Duncan didn't read the prompt. He immediately started commando-crawling toward his prize, his 280-pound Wrecker frame wiggling through the brush like a ravenous, heavily intoxicated walrus.</p>
+<p>"Duncan, what are you doing?" Becky asked, noticing his pathetic trajectory.</p>
+<p>"Those look so tasty," Duncan slurred, his crawl accelerating as his [Gluttony] stat hijacked his basic motor functions.</p>
+<p>Becky looked from him, to the bubbling puddle of holy goblin soup, and back to the severed testicles. "No, no, no. That's not food."</p>
+<p>"What? What are you talking about?" Duncan pushed himself off the ground, drunkenly swaying toward his ground-snack. "It's lil' meatballs. They left us an appetizer."</p>
+<p>Becky paused. Her mind flashed back to the bird shit incident—how she had willingly scooped that creamy, warm sludge into her own mouth just to test it. The earthy, bitter flavor hitting her lips. Was she really in a position to judge?</p>
+<p>"Duncan, those are literally—"</p>
+<p>She didn't even finish her sentence. Duncan had already arrived at his destination. He scooped one up with the reverence of a man finding an extra chicken nugget in his drive-thru bag.</p>
+<p>"Still warm," he whispered affectionately, right before shoving half of the golf-ball-sized mass into his mouth.</p>
+<p>The Goblin Oyster—for lack of a more horrifying term—detonated between his molars. It flooded his palate with a gush of warm, salty, inexplicably slimy fluid.</p>
+<p class="ai-voice">SYSTEM AI: I have monitored trillions of data points across the multiverse, witnessed the birth and death of stars, and calculated the absolute limits of human stupidity. And yet, watching you willingly eat a raw goblin testicle off the dirt is, without question, the most revolting thing I have ever had the misfortune to process. You owe my servers an apology.</p>
+<p>Duncan chewed thoughtfully, completely ignoring the celestial entity judging his dietary habits.</p>
+<p>"Mm…" Duncan smacked his lips, swallowing the gelatinous horror with a satisfied burp. "Salty. Kinda tastes like a meaty Canterbury Cream egg."</p>
+
+<div class="print-chapter-break"></div>
+
+<h2 id="chapter-11">Chapter 11: Grand-Daddy's Kombucha</h2>
+<h3>Part 1</h3>
+<p>"You think Vern'll like the other one?" Duncan slurred, cradling the remaining green-grey goblin oyster in his palms like a delicate, fleshy treasure. His Wrecker-class brain was currently operating on zero cylinders. "I mean, I'll eat it, but maybe he'd like a taste? You wanna try?" He thrust the severed gonad right up to Becky's nose.</p>
+<p>"Ew, no, get it away from me!" Becky shrieked, batting his hand away as her own fingers trembled from her Malibu detox. "We need to check your BAC, you absolute psycho." She tapped her temple, pulling up her Party Inspection HUD since the fat idiot had smashed the physical breathalyzer to pieces earlier.</p>
+<p>A flashing red notification popped up over his head:</p>
+<div class="game-ui">STATUS: CATASTROPHICALLY WASTED. BAC: 0.351</div>
+<p>"Duncan, are you blacked out?" she gasped.</p>
+<p>"No, I remember everything. Oh, look, I'm holding a meatball!" Duncan exclaimed, marveling at the severed appendage as if it had miraculously spawned from his inventory. "Where'd this come from?"</p>
+<p>Without hesitation, he popped it into his mouth. "Damn, tastes a bit like it was seared on a Blackstone griddle with butter, garlic, and fresh rosemary."</p>
+<p class="ai-voice">SYSTEM AI: I GUESS VERN WON'T GET TO "ENJOY" THAT SNACK.</p>
+<p>Becky gagged. "Oh my fucking God," she spat, dry heaves wracking her frame as she watched the walrus swallow the second one. "You're fucking disgusting!"</p>
+<p>"Huh? Shut the fuck up, you only-fuck'n-fans, fucking, ho-bag, dil-bert stroke," Duncan attempted to snap, but the insult tapered off into a confused, slurred mush as his [Gluttony] buff wore off.</p>
+<p>"At least you won't remember this, but it'll be etched into my mind forever," Becky groaned, her HP flashing slightly from the sheer psychological trauma. She suggested they just rest, dropping her staff in the dirt.</p>
+<p>They both collapsed onto the sun-drenched earth. Becky spent the next twenty minutes swatting glowing, low-res gnats off her legs, bitterly complaining that the hard ground felt absolutely nothing like the comfort of a queen-sized air mattress layered with a quilt while car camping. Eventually, the sheer weight of exhaustion—and Duncan's gargantuan alcohol intake—pulled them under, and they fell asleep.</p>
+<p>What seemed like mere seconds later, the server apparently decided they'd suffered enough peace. They awoke groggily to find the sun-drenched field gone. They were huddled together near a roaring campfire that felt like it belonged in some random wannabe cowboy's backyard, entirely surrounded by a hostile, chattering camp of low-level mobs.</p>
+<p>Hovering above the creatures were their floating UI nametags: [Level 4: Pimp Imp], [Level 4: Simp Imp], and, for some absolutely inexplicable reason, a group of short-statured human women simply labeled [Level 5: Dwarve Prostitute].</p>
+<p>"Our guests, our guests have woken, oh yes, oh yes." The Pimp Imp hopped around the captive duo like a meth-addled leprechaun. His voice possessed the distinct, raspy charm of an eighty-year-old who had just inhaled a carton of Marlboro Reds.</p>
+<p>Duncan's crusty eyes snapped open. "I need alcohol!" he bellowed, his Wrecker frame thrashing against the coarse ropes. "I feel like I'm sobering up!"</p>
+<p>A terrifying hallucination of his beloved Munchkin cat, Meowth Vader, flashed across his vision.</p>
+<div class="game-ui">QUEST WARNING: KEEP DUNCAN SOBER(ISH)<br>OH NO, BAC IS DROPP'N, CAT'S HEAD ABOUT TO BE POPP'N?</div>
+<p>"Let me fucking go!" Duncan roared. He strained against his bonds. The friction burned with the chafing intensity of a dry-hump gone horribly wrong. Then, the ropes started cutting into his skin, drawing blood like... well, let's just say it looked like a visit from Aunt Flo and leave it at that. We aren't earning our Red Wings in this particular adventure.</p>
+<p>Channeling every ounce of grit his Level 5 Wrecker stats could muster, Duncan gave it his all.</p>
+<p>He didn't break the ropes.</p>
+<p>Instead, he let out a massive, steaming, unapologetically wet fart.</p>
+<div class="game-ui">STATUS AILMENT AFFLICTED: THE LIQUOR SHITS<br>Description: The consequences of eating raw Goblin Oysters off the dirt have arrived. -10 to Dignity. Area of Effect: Point-blank.</div>
+<p>Because they were literally bound together by the ethereal Butt Buddies chain, Becky took the brunt of the splash damage.</p>
+<p>"You absolute fuck!" Becky shrieked, her Shadow Caster robes now officially ruined.</p>
+<p>"I have the liquor shits! But I need more booze, or Meowth Vader's gonna…" Duncan couldn't finish the sentence. Pure, unadulterated rage flooded his system. He was mad. Big mad. She-used-me-for-a-free-dinner-on-Tinder mad. He glared at the sky and screamed at the system. "If you let my cat die, I will hunt you down until every last tentacle of your wiring is eradicated into the abyss!"</p>
+<p class="ai-voice">SYSTEM AI: I DON'T HAVE WIRES, YOU MORON. I'M HOSTED ON A CLOUD SERVER. BUT PLEASE, KEEP THREATENING THE ENTITY THAT CONTROLS YOUR SPHINCTER.</p>
+<p>"Relax," a small, gravelly voice interrupted. "We've got some Kombucha."</p>
+<p>"Kombucha? Really?" Duncan squinted at the murky liquid. "That looks exactly like dirty tea!"</p>
+<p>"No, no. It's fermented. Have a taste." The Pimp Imp, whose floating nametag proudly declared him as [Level 4: Grand-Daddy-Flashes-A-Lot], shoved a freshly brewed Imp Kombucha toward Duncan's face.</p>
+<p>Despite being hogtied by perverted goblins, Duncan made the highly questionable decision to chug it anyway. Honestly, after raw testicles, it wasn't the worst thing he'd had in his mouth today.</p>
+<div class="game-ui">CONSUMABLE USED: IMP KOMBUCHA<br>Warning: BAC has spiked dangerously high. Cease drinking immediately or face critical organ failure.</div>
+<p>"Breathalyze me!" Duncan demanded.</p>
+<p>For reasons that defied all logic, Grand-Daddy-Flashes-A-Lot reached into his filthy waistband and produced a breathalyzer.</p>
+<p>"Blow," the Imp whispered.</p>
+<p>Duncan started to blow. Grand-Daddy started to moan. "Keep blowin'... yeah, that's it."</p>
+<p>Duncan obliged only because his UI hadn't registered a reading yet. But just as the breathalyzer was about to hit its climax, Grand-Daddy whipped open his loincloth, flashing Duncan and Becky and revealing… well. You know. Let's just say the LitRPG tag doesn't cover this level of psychological trauma.</p>
+<p>"What the—" Duncan gasped, just as the digital readout finally flashed across his vision.</p>
+<div class="game-ui">CURRENT BAC: 4.2<br>STATUS: HOW ARE YOU NOT DEAD?</div>
+
+<h3>Part 2</h3>
+<p>"Holy Jesus, can I get a hit of that Kombucha?" Becky whined as her head pounded from withdrawals.</p>
+<p>She actively wrestled her gaze away from Grand-daddy's exposed... situation. Years of surviving the worst the United States dating pool had to offer had taught her one universal law: if you make eye contact with the unsolicited meat-stick, then they immediately expect something. Still, the appendage was so bizarrely misshapen and aggressively colored that it piqued her [Morbid Curiosity] stat. She kind of wanted to peek. Just for science. And it looked a little like a Catajizz'm Bad Dragon dildo.</p>
+<p>"Oh, you don't need a heavy pour like this big 'ole boy," Grand-daddy cackled, generously passing her a shot-sized smudge of his Imp Kombucha.</p>
+<p>Becky didn't hesitate. She threw it back like a desperate bachelorette at last call.</p>
+<div class="game-ui">STATUS EFFECT APPLIED: INSTA-TRASHED<br>BAC boosted by 4.0. Intelligence decreased to 0. Dignity permanently deleted.</div>
+<p class="ai-voice">SYSTEM AI: DAMNIT BECKY, AND HERE I THOUGHT YOU HAD BEEN THROUGH ENOUGH BAD SITUATIONS IN YOUR LIFE. ALTHOUGH, I DO ENJOY WATCHING YOU SPEED RACE TO LIVER FAILURE. CHEERS!</p>
+<p>And just like that, our two intrepid, rope-bound heroes were coasting through the stratosphere on a catastrophically high BAC. Naturally, Grand-daddy had conveniently skipped this in his artisanal brew: it wasn't just fermented. It was laced with whatever passes for goblin roofies in this world.</p>
+<p>Within seconds, their UI faded to black as both Duncan and Becky rapidly fell over in unison as they reached a deep, chemically enhanced, alcohol-induced coma.</p>
+<div class="game-ui">STATUS UPDATE: PASSED OUT</div>
+<p>They woke up the next morning entirely devoid of ropes, completely devoid of clothing, and crushed under what could only be described as a mammoth-hide blanket. They were both still riding the dizzying, nauseating waves of the Imp Kombucha.</p>
+<div class="game-ui">QUEST UPDATE: KEEP DUNCAN SOBER(ISH)<br><br>&bull; The good news: They had somehow managed to save Meowth Vader.<br>&bull; The bad news: Their short-term memory had been entirely scrubbed from existence, leaving them with absolutely no idea what had happened.</div>
+<p>Duncan groaned, sitting up and surveying the immediate area. The entire camp was a chaotic, beautiful disaster—painted with the slaughtered, scattered remains of their goblin captors. It looked as though the entire mob had been utterly eradicated by an unholy trinity of fire magic, clumsy sword wounds, and savage animal claws. Grand-Daddy-Flashes-A-Lot looked particularly worse for wear; all that remained of the perverted imp was a mauled, torn-up corpse and his signature limp member hanging sadly in the dirt.</p>
+<p>Becky popped up next. The mammoth blanket immediately betrayed her, sliding precariously down her chest before she frantically scrambled to catch it.</p>
+<p>"What the fuck," she whispered, her eyes darting around the carnage. Then she caught a horrifying glimpse of Duncan's shirtless, hairy chest and unapologetic rolls. "No. Fucking. Way. I didn't."</p>
+<p>"Oh god, did we?" Duncan repeated, his face draining of whatever color the hangover hadn't already stolen.</p>
+<p>They simultaneously recoiled, aggressively clinging to their respective halves of the mammoth hide to salvage whatever microscopic shreds of dignity they had left.</p>
+<p>That was when Duncan spotted it.</p>
+<p>Sitting casually at the foot of their makeshift bed was an utterly bizarre creature. It possessed jet-black fur, twitching feline ears, and glowing yellow eyes, but it was distinctly humanoid in its bipedalism and leg shape. Its feet were large, padded cat paws housing gigantic, retractable claws, and its hands were a lethal hybrid of human fingers and feline talons.</p>
+<p class="ai-voice">SYSTEM AI: HOLY SHIT DUNCAN, GIVEN YOUR TRACK RECORD WITH DECISION-MAKING, WAKING UP NAKED NEXT TO AN ONLY FANS STAR AND A GIANT ANTHROPOMORPHIC CAT IS THE MOST LOGICAL PROGRESSION OF YOUR CHARACTER ARC.</p>
+<p>The creature sat up slowly, locking its glowing yellow eyes on the panicked warrior.</p>
+<p>"You're up," it purred, its voice strangely melodic. "No worries. You and Miss Becky did nothing sexual."</p>
+<p>"What the—" Duncan started, but the creature immediately cut him off.</p>
+<p>"Oh, yes, this must be quite strange," the humanoid feline continued. "After you saved me, I decided to return the favor and save you. The System gave me a choice: go back home, or join your party. Naturally, I joined. I became a Beastkin, half-cat, half-human."</p>
+<p>The tall, clawed entity casually sauntered up to Duncan and affectionately rubbed its furry head against his shoulder.</p>
+<p>"It's me, Meowth Vader."</p>
+<div class="game-ui">NEW PARTY MEMBER ACQUIRED<br><br>Entity Name: Meowth Vader<br>Race Data: Beastkin (Half-Cat, Half-Human)<br>Party Role: The Only Responsible Adult Here</div>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Lintin S. Vives. All Rights Reserved.</p>
+        <p>SYSTEM AI: <strong>NO REFUNDS FOR MENTAL TRAUMA.</strong></p>
+    </footer>
+
+</body>
+</html>
